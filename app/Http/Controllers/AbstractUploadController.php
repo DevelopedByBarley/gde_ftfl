@@ -9,6 +9,7 @@ use Core\ValidationException;
 class AbstractUploadController extends Controller
 {
   private $abstractModel;
+  private $type = 'ftfl';
 
   public function __construct()
   {
@@ -41,7 +42,7 @@ class AbstractUploadController extends Controller
       $savedFileName = $this->storage
         ->setWhiteList(['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'])
         ->file($file)
-        ->save('/storage/uploads/abstracts/drone');
+        ->save('/storage/uploads/abstracts/' . $this->type);
 
       if (!$savedFileName) {
         $this->toast->danger('Az absztrakt feltöltése nem sikerült. Kérjük próbálja meg újra.')->back();
@@ -49,7 +50,7 @@ class AbstractUploadController extends Controller
 
       $validated['fileName'] = $savedFileName;
       $validated['originalFileName'] = $file['name'];
-      $validated['type'] = 'drone';
+      $validated['type'] = $this->type;
       $validated['created_at'] = date('Y-m-d H:i:s');
 
       $last_id = $this->abstractModel->create($validated);

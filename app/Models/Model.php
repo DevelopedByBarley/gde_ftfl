@@ -64,6 +64,16 @@ class Model
     }
   }
 
+  public function findAllBy(string $column, $value)
+  {
+    try {
+      return $this->db->query("SELECT * FROM $this->table WHERE $column = :value", ['value' => $value])->get();
+    } catch (Exception $e) {
+      Log::critical("Database findAllBy error in Model.", "Database error: " . $e->getMessage());
+      return null;
+    }
+  }
+
   public function create(array $data, array $exceptions = [])
   {
     return $this->insertIntoTable($this->table, $data, $exceptions);

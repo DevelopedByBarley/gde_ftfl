@@ -7,6 +7,7 @@ use Core\Session;
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+define('ABSTRACT_TYPE', 'ftfl');
 define('EVENT_STARTED', false);
 
 const BASE_PATH = __DIR__ . '/../';

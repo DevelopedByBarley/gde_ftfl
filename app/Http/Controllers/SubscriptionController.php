@@ -99,6 +99,7 @@ class SubscriptionController extends Controller
       }
 
       $validated['conferences'] = json_encode($validated['conferences']);
+      $validated['created_at'] = date('Y-m-d H:i:s');
 
 
       $created_id = $this->subscriber->create($validated);

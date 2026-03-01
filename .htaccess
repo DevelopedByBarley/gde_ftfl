@@ -1,10 +1,9 @@
 
-
 <IfModule mod_rewrite.c>
-    RewriteEngine On
+   RewriteEngine On
 
-    # Győződj meg arról, hogy a public mappa tartalma kiszolgálható
-      RewriteCond %{REQUEST_URI} !^/public/
+  # Győződj meg arról, hogy a public mappa tartalma kiszolgálható
+   RewriteCond %{REQUEST_URI} !^/public/
       RewriteCond %{REQUEST_URI} !^/resources/
       RewriteRule ^(.*)$ public/%1 [END]
       
@@ -12,8 +11,6 @@
     # Ha fájl vagy könyvtár létezik, hagyd ki az átírást
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-
-
 
     # Irányítsd az összes kérést a public/index.php fájlhoz
     RewriteRule (.*) public/index.php [QSA]

@@ -10,7 +10,7 @@ use Core\Response;
 use Core\Session;
 use Core\ValidationException;
 
-class AdminController extends Controller
+class AdminController extends Controller 
 {
 
   private $admin;
@@ -21,7 +21,6 @@ class AdminController extends Controller
   {
     $this->admin = new Admin();
     $this->inviteService = new AdminInviteService();
-    parent::__construct();
   }
 
   public function dashboard()
