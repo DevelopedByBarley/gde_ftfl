@@ -68,13 +68,48 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'select_conferences' => 'Válaszd ki, mely konferenciákon vennél részt',
         'agree' => 'Elfogadom az ÁSZF-et',
         'submit' => 'Küldés',
+        'help_text' => 'Ha bármilyen kérdés vagy probléma felmerülne, írjanak ide:',
+        'already_subscribed' => 'Ön már regisztrált a következő konferenciákra: ',
+        'subscription_success' => 'Sikeres regisztráció!',
+        'subscription_failed' => 'A regisztráció nem sikerült. Kérjük, próbálja újra később.',
+        'registration_type' => 'Válassza ki hogy milyen módon szeretne részt venni a konferencián',
         'conf_items' => [
             [
-                'title' => 'FTFL konferencia',
-                'meta' => 'Tanulási rendszerek, új módszertanok',
-                'date' => 'május 18.',
+                'title' => 'The Future of Teaching The Future of Learning',
+                'value' => 'ftfl',
+                'meta' => 'FTFL2026',
+                'date' => 'Május 21',
                 'fileName' => 'ftfl.png',
-                'value' => 'FTFL konferencia',
+            ],
+        ],
+        'all_conf_items' => [
+            [
+                'title' => 'The Future of Intelligence The Future of Applications',
+                'value' => 'artificial_intelligence',
+                'meta' => 'FIFA2026',
+                'date' => 'Május 18',
+                'fileName' => 'ai.png',
+            ],
+            [
+                'title' => 'The Future of Security The Future of Trust',
+                'value' => 'information_security',
+                'meta' => 'FSFT2026',
+                'date' => 'Május 19',
+                'fileName' => 'secure_1.png',
+            ],
+            [
+                'title' => 'The Future of Dronedata The Future of Vision',
+                'value' => 'drone_technology',
+                'meta' => 'FDFV2026',
+                'date' => 'Május 20',
+                'fileName' => 'drone.png',
+            ],
+            [
+                'title' => 'The Future of Teaching The Future of Learning',
+                'value' => 'ftfl',
+                'meta' => 'FTFL2026',
+                'date' => 'Május 21',
+                'fileName' => 'ftfl.png',
             ],
         ],
     ],
@@ -102,23 +137,64 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         ],
     ],
     'info' => [
-        'title' => 'Hasznos információk',
-        'how_to_get_there_title' => 'Kinek szól a konferencia?',
-        'how_to_get_there_text' => 'A konferencia a dróntechnológia és az UAS-rendszerek fejlesztésében, alkalmazásában és kutatásában érintett szakembereket szólítja meg.',
-        'registration_open_title' => 'Menetrend',
-        'registration_open_text' => 'A részletes program három napos bontásban érhető el.',
-        'schedule_title' => 'Előadók',
-        'schedule_text' => 'Hazai és nemzetközi szakértők mutatják be kutatási és ipari tapasztalataikat.',
+        'title' => 'Gyakori kérdések',
+        'faq' => [
+            [
+                'question' => 'Mikor és hol kerül megrendezésre az esemény?',
+                'answer' => 'Időpont: 2026. május 18–21.<br>Helyszín: 1039 Budapest, Fejér Lipót utca 70.',
+            ],
+            [
+                'question' => 'Hogyan épül fel egy konferencianap?',
+                'answer' => 'Délelőtt angol nyelvű plenáris előadások<br>Délután magyar és angol nyelvű szekcióülések<br>A nap végén szervezett szabadidős programok',
+            ],
+            [
+                'question' => 'Lesz online közvetítés?',
+                'answer' => 'Igen. A konferencia online streamen keresztül is követhető, minden konferencia dedikált weboldalán, valamint a Gábor Dénes Egyetem YouTube csatornáján.',
+            ],
+            [
+                'question' => 'Lesznek kiállítók?',
+                'answer' => 'Igen. A konferenciahéten szakmai kiállítók is részt vesznek.',
+            ],
+            [
+                'question' => 'Biztosított-e étkezés?',
+                'answer' => 'Igen. A konferencianapokon ebédet, valamint kávét és üdítőt biztosítunk a regisztrált résztvevők számára.',
+            ],
+            [
+                'question' => 'Van részvételi díj?',
+                'answer' => 'A részvétel díjmentes, de előzetes regisztráció szükséges.',
+            ],
+            [
+                'question' => 'Hogyan lehet résztvevőként jelentkezni?',
+                'answer' => 'Az online regisztráció kitöltése elegendő. További teendő nincs.',
+            ],
+            [
+                'question' => 'Kapnak a résztvevők részvételi igazolást?',
+                'answer' => 'Igen, részvételi igazolást igény esetén biztosítunk.',
+            ],
+            [
+                'question' => 'Hogyan lehet előadóként jelentkezni?',
+                'answer' => 'Online regisztráció szükséges. A visszaigazoló e-mailben külön link érkezik az absztrakt feltöltéséhez. Az absztraktot az előírt formai követelmények szerint kell benyújtani. A feltöltést követően legkésőbb egy héten belül érkezik értesítés az elfogadásról vagy elutasításról.',
+            ],
+            [
+                'question' => 'A konferenciára benyújtott absztraktok hol jelennek meg?',
+                'answer' => 'A hivatalosan elfogadott absztraktok absztraktkötetben jelennek meg. Az absztraktkötet a konferencia programfüzeteként is funkcionál.',
+            ],
+            [
+                'question' => 'Kapnak az előadók előadói igazolást?',
+                'answer' => 'Igen, előadói igazolást igény esetén biztosítunk.',
+            ],
+        ],
     ],
     'landing' => [
         'hero' => [
-            'title' => 'FTFL',
+            'title' => 'FTFL2026',
+            'subtitle' => 'The Future of Teaching The Future of Learning',
+            'subsubtitle' => 'International Conference on Digital Educational Methodology',
             'description' => 'Az konferencia célja az oktatás és a tanulás területén zajló digitális és módszertani változások tudományos vizsgálata.
 A rendezvény fórumot biztosít az oktatók, kutatók és gyakorlati szakemberek számára a mesterséges intelligencia és más modern technológiák oktatási alkalmazásával kapcsolatos tapasztalatok és eredmények megosztására.
 A konferencia hozzájárul az e-learning és az oktatásmódszertan területén kialakuló szakmai diskurzus megerősítéséhez.',
-            'date' => '2026. május 19.',
-            
-            'location' => 'Budapest, Magyarország',
+            'date' => '2026. Május 21.',
+            'location' => 'Gábor Dénes Egyetem, Budapest',
             'language' => 'HU / EN',
             'cta' => 'View full Summit',
         ],

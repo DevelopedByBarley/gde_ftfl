@@ -66,15 +66,51 @@ The conference contributes to strengthening professional discourse in the fields
         'company' => 'Company / University',
         'phone' => 'Phone number',
         'select_conferences' => 'Select the conferences you would like to attend',
-        'agree' => 'I accept the Terms and Conditions',
+        'agree' => 'I agree to the terms and conditions',
         'submit' => 'Submit',
+        'help_text' => 'If you have any questions or issues, please write to:',
+        'help_email' => 'support@gde.example',
+        'already_subscribed' => 'You have already subscribed to the following conferences: ',
+        'subscription_success' => 'Subscription created successfully!',
+        'subscription_failed' => 'Subscription could not be created. Please try again later.',
+        'registration_type' => 'Select how you would like to participate in the conference',
         'conf_items' => [
             [
-                'title' => 'FTFL conference',
-                'meta' => 'Learning systems, new methodologies',
-                'date' => '18 May',
+                'title' => 'The Future of Teaching The Future of Learning',
+                'value' => 'ftfl',
+                'meta' => 'FTFL2026',
+                'date' => 'May 21',
                 'fileName' => 'ftfl.png',
-                'value' => 'FTFL conference',
+            ],
+        ],
+        'all_conf_items' => [
+            [
+                'title' => 'The Future of Intelligence The Future of Applications',
+                'value' => 'artificial_intelligence',
+                'meta' => 'FIFA2026',
+                'date' => 'May 18',
+                'fileName' => 'ai.png',
+            ],
+            [
+                'title' => 'The Future of Security The Future of Trust',
+                'value' => 'information_security',
+                'meta' => 'FSFT2026',
+                'date' => 'May 19',
+                'fileName' => 'secure_1.png',
+            ],
+            [
+                'title' => 'The Future of Dronedata The Future of Vision',
+                'value' => 'drone_technology',
+                'meta' => 'FDFV2026',
+                'date' => 'May 20',
+                'fileName' => 'drone.png',
+            ],
+            [
+                'title' => 'The Future of Teaching The Future of Learning',
+                'value' => 'ftfl',
+                'meta' => 'FTFL2026',
+                'date' => 'May 21',
+                'fileName' => 'ftfl.png',
             ],
         ],
     ],
@@ -102,22 +138,64 @@ The conference contributes to strengthening professional discourse in the fields
         ],
     ],
     'info' => [
-        'title' => 'Useful information',
-        'how_to_get_there_title' => 'Who is the conference for?',
-        'how_to_get_there_text' => 'The conference addresses professionals involved in the development, application, and research of drone technology and UAS systems.',
-        'registration_open_title' => 'Schedule',
-        'registration_open_text' => 'The detailed program is available in a three-day structure.',
-        'schedule_title' => 'Speakers',
-        'schedule_text' => 'Domestic and international experts present their research and industrial experience.',
+        'title' => 'Frequently Asked Questions',
+        'faq' => [
+            [
+                'question' => 'When and where will the event take place?',
+                'answer' => 'Date: May 18–21, 2026<br>Location: 1039 Budapest, Fejér Lipót Street 70.',
+            ],
+            [
+                'question' => 'How is a conference day structured?',
+                'answer' => 'Morning: English-language plenary sessions<br>Afternoon: Hungarian and English section sessions<br>Evening: Organized leisure programs',
+            ],
+            [
+                'question' => 'Will there be online streaming?',
+                'answer' => 'Yes. The conference can be followed online via streaming on each conference\'s dedicated website and on the Gábor Dénes University YouTube channel.',
+            ],
+            [
+                'question' => 'Will there be exhibitors?',
+                'answer' => 'Yes. Professional exhibitors will participate during the conference week.',
+            ],
+            [
+                'question' => 'Is catering provided?',
+                'answer' => 'Yes. Lunch, coffee, and refreshments are provided for registered participants during conference days.',
+            ],
+            [
+                'question' => 'Is there a participation fee?',
+                'answer' => 'Participation is free, but prior registration is required.',
+            ],
+            [
+                'question' => 'How can I register as a participant?',
+                'answer' => 'Completing the online registration form is sufficient. No further action is needed.',
+            ],
+            [
+                'question' => 'Will participants receive a certificate of attendance?',
+                'answer' => 'Yes, certificates of attendance are provided upon request.',
+            ],
+            [
+                'question' => 'How can I apply as a speaker?',
+                'answer' => 'Online registration is required. A separate link for abstract submission will be sent in the confirmation email. The abstract must be submitted according to the prescribed formatting requirements. Notification of acceptance or rejection will be sent within one week of submission.',
+            ],
+            [
+                'question' => 'Where will the abstracts submitted to the conference be published?',
+                'answer' => 'Officially accepted abstracts will be published in an abstract booklet. The abstract booklet also functions as the conference program.',
+            ],
+            [
+                'question' => 'Will speakers receive a speaker certificate?',
+                'answer' => 'Yes, speaker certificates are provided upon request.',
+            ],
+        ],
     ],
     'landing' => [
         'hero' => [
-            'title' => 'FTFL',
+            'title' => 'FTFL2026',
+            'subtitle' => 'The Future of Teaching The Future of Learning',
+            'subsubtitle' => 'International Conference on Digital Educational Methodology',
             'description' => 'The conference aims to provide a scientific examination of digital and methodological changes in education and learning.
 The event offers a forum for educators, researchers, and practitioners to share experiences and results related to the educational use of artificial intelligence and other modern technologies.
 The conference contributes to strengthening professional discourse in the fields of e-learning and pedagogy.',
-            'date' => '19 May 2026',
-            'location' => 'Budapest, Hungary',
+            'date' => '21 May 2026',
+            'location' => 'Dennis Gabor University, Budapest',
             'language' => 'HU / EN',
             'cta' => 'View full Summit',
         ],

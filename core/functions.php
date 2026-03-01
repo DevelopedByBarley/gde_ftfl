@@ -26,7 +26,7 @@ function errors($key, $errors)
   if (isset($errors) && !empty($errors)) {
     if (isset($errors[$key]['errors'])) {
       foreach ($errors[$key]['errors'] as $error) {
-        echo "<li class='list-unstyled text-danger'>{$error}</li>";
+        echo "<div class='alert alert-danger'>{$error}</div>";
       }
     }
   }
@@ -404,10 +404,12 @@ function csrf()
 
 function lang($params)
 {
+  
   $lang = explode('-', Cookie::get('lang'))[0];
   $keys = explode('__', $params);
-
+  
   [$file_name, $keys_of_arr] = $keys;
+  
 
   $arr_key = explode('.', $keys_of_arr);
   $file = require base_path("langs/{$lang}/{$file_name}.lang.php");

@@ -16,6 +16,7 @@ $router->post('/lang', function() {
 
 require base_path('routes/api.php');
 require base_path('routes/subscriptions.php');
+require base_path('routes/abstracts.php');
 require base_path('routes/admin.php');
 require base_path('routes/user.php');
 require base_path('routes/test.php');   

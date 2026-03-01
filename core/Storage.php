@@ -78,7 +78,10 @@ class Storage
       $this->file = $file;
     }
 
-    $this->checkMimeType($this->file);
+    if (!$this->checkMimeType($this->file)) {
+      $this->file = null;
+      return $this;
+    }
     return $this;
   }
 
@@ -112,11 +115,11 @@ class Storage
       foreach ($arr_of_images as $image) {
         if (empty($image)) continue;
 
-        $imagePath = base_path('public/images' . $path . "/" . $image);
+        $imagePath = base_path($path . '/' . $image);
 
         if (file_exists($imagePath)) {
           if (!unlink($imagePath)) {
-            Log::warning('Failed to delete image', 'Image: ' . $imagePath);
+
           }
         }
       }
@@ -126,7 +129,7 @@ class Storage
   }
 
 
-  public function save($path = "/")
+  public function save($path)
   {
     if ((!$this->file || is_null($this->file)) && (!$this->files || is_null($this->files))) {
       return null;
@@ -153,18 +156,16 @@ class Storage
   {
     // Ellenőrizzük hogy nincs-e hiba a fájl feltöltésben
     if ($file['error'] !== UPLOAD_ERR_OK) {
-      Log::error('File upload error', 'Upload error code: ' . $file['error']);
       return false;
     }
 
     $rand = uniqid(rand(), true);
     $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
     $originalFileName = $rand . '.' . $ext;
-    $directoryPath = base_path('public/images' . $path);
+    $directoryPath = base_path($path);
 
     if (!is_dir($directoryPath)) {
       if (!mkdir($directoryPath, 0755, true)) {
-        Log::error('Directory creation failed', 'Failed to create: ' . $directoryPath);
         return false;
       }
     }
@@ -173,14 +174,12 @@ class Storage
 
     
     if (!move_uploaded_file($file["tmp_name"], $destination)) {
-      Log::error('File move failed', 'Failed to move file to: ' . $destination);
       return false;
     }
 
     // Képfájlok optimalizálása
     $this->optimizeImageIfNeeded($destination);
 
-    Log::info('File uploaded successfully', 'File: ' . $originalFileName . ' to ' . $destination);
 
     return $originalFileName;
   }
@@ -205,9 +204,7 @@ class Storage
       } elseif ($ext === 'gif') {
         $this->optimizeGIF($filePath);
       }
-      Log::info('Image optimized', 'File: ' . $filePath);
     } catch (\Exception $e) {
-      Log::warning('Image optimization failed', 'File: ' . $filePath . ' Error: ' . $e->getMessage());
     }
   }
 
@@ -255,27 +252,27 @@ class Storage
   {
     // Ellenőrizzük hogy létezik-e a temp fájl
     if (!file_exists($file["tmp_name"])) {
-      Log::error('Temp file not found', 'File: ' . $file["tmp_name"]);
-      (new Toast)->danger('Fájl feltöltési hiba, kérjük próbálja meg újra.')->back();
       return false;
     }
 
     $fileType = mime_content_type($file["tmp_name"]);
 
     if (!in_array($fileType, $this->whiteList)) {
-      Log::info('File mimetype is not allowed', 'File type: ' . $fileType);
-      (new Toast)->danger('Hibás fájl formátum, kérjük próbálja meg újra.')->back();
       return false;
     }
 
     return true;
   }
 
-  private function checkMimeTypeByArray()
+  private function checkMimeTypeByArray($files)
   {
-    foreach ($this->files as $file) {
-      $this->checkMimeType($file);
+    $filtered = [];
+    foreach ($files as $file) {
+      if ($this->checkMimeType($file)) {
+        $filtered[] = $file;
+      }
     }
+    $this->files = $filtered;
   }
 
 
@@ -283,5 +280,11 @@ class Storage
   public function getWhiteList(): array
   {
     return $this->whiteList;
+  }
+
+  public function setWhiteList(array $whiteList): self
+  {
+    $this->whiteList = $whiteList;
+    return $this;
   }
 }
