@@ -76,7 +76,7 @@ class AdminSubscriberController extends Controller
     }
   }
 
-  public function exportFtfl()
+  public function exportFullByEvent()
   {
     try {
       Log::info('FTFL feliratkozók export indítva', ['admin' => auth('admin')->email ?? null], 'admin');
@@ -102,10 +102,10 @@ class AdminSubscriberController extends Controller
   public function exportOnlyAttendee()
   {
     try {
-      Log::info('Csak FTFL előadók export indítva', ['admin' => auth('admin')->email ?? null], 'admin');
+      Log::info('Csak FTFL résztvevők export indítva', ['admin' => auth('admin')->email ?? null], 'admin');
       $this->subscriber->exportOnlyAttendeesToExcel();
     } catch (\Throwable $e) {
-      Log::error('Csak FTFL előadók export hiba', ['message' => $e->getMessage(), 'admin' => auth('admin')->email ?? null], 'admin');
+      Log::error('Csak FTFL résztvevők export hiba', ['message' => $e->getMessage(), 'admin' => auth('admin')->email ?? null], 'admin');
       return $this->toast->danger('Hiba történt az export során.')->back();
     }
   }

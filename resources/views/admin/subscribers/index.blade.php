@@ -24,7 +24,7 @@ foreach ($confItems as $item) {
                                 <a href="/admin/subscribers/export/speakers" class="btn btn-outline-info btn-sm">
                                     <i class="bi bi-download me-1"></i><?= EVENT_TYPE ?> Előadók exportálása
                                 </a>
-                                <a href="/admin/subscribers/export/<?= EVENT_TYPE ?>"
+                                <a href="/admin/subscribers/export/full"
                                     class="btn btn-outline-success btn-sm">
                                     <i class="bi bi-download me-1"></i><?= EVENT_TYPE ?> összes exportálása
                                 </a>
