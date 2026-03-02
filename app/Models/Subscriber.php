@@ -9,7 +9,6 @@ use App\Models\Model;
 class Subscriber extends Model
 {
   protected $table = 'subscriptions';
-  protected $type = 'ftfl';
 
   /**
    * Get all subscribers who subscribed to a specific conference
@@ -101,12 +100,12 @@ class Subscriber extends Model
 
   public function export()
   {
-    $this->exportSubscribersToExcelByConference($this->type, 'subscribers-ftfl.xlsx');
+    $this->exportSubscribersToExcelByConference(EVENT_TYPE, 'subscribers-ftfl.xlsx');
   }
 
   public function exportOnlySpeakersToExcel()
   {
-    $subscribers = $this->getByConference($this->type);
+    $subscribers = $this->getByConference(EVENT_TYPE);
 
     if (empty($subscribers)) {
       throw new \Exception("Nincsenek előfizetők az exportáláshoz.");
@@ -128,7 +127,7 @@ class Subscriber extends Model
 
   public function exportOnlyAttendeesToExcel()
   {
-    $subscribers = $this->getByConference($this->type);
+    $subscribers = $this->getByConference(EVENT_TYPE);
 
 
     if (empty($subscribers)) {

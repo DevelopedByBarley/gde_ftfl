@@ -29,7 +29,7 @@ foreach ($confItems as $item) {
                                     <i class="bi bi-download me-1"></i><?= EVENT_TYPE ?> összes exportálása
                                 </a>
                                 <a href="/admin/subscribers/export/all" class="btn btn-primary btn-sm">
-                                    <i class="bi bi-download me-1"></i>Összes export
+                                    <i class="bi bi-download me-1"></i>Összes event export
                                 </a>
                             </div>
                         </div>

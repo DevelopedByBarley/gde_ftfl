@@ -9,7 +9,6 @@ use App\Models\Model;
 class AbstractModel extends Model
 {
   protected $table = 'abstracts';
-  protected $abstract_type = 'ftfl';
 
   public function __construct($attributes = [])
   {
@@ -18,12 +17,12 @@ class AbstractModel extends Model
 
   public function getAbstractType()
   {
-    return $this->abstract_type;
+    return EVENT_TYPE;
   }
 
 
   public function export() {
-    $abstracts = $this->findAllBy('abstract_type', $this->abstract_type);
+    $abstracts = $this->findAllBy('abstract_type', EVENT_TYPE) ?? [];
 
     if (empty($abstracts)) {
       throw new \Exception("Nincsenek absztraktok az exportáláshoz.");
@@ -39,7 +38,7 @@ class AbstractModel extends Model
       ];
     }, $abstracts);
 
-    (new \Core\Excel())->data($data)->download($this->abstract_type . '_abstracts.xlsx');
+    (new \Core\Excel())->data($data)->download(EVENT_TYPE . '_abstracts.xlsx');
   }
 
 

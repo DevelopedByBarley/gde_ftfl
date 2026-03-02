@@ -11,7 +11,6 @@ use Core\Response;
 class AdminAbstractsController extends Controller
 {
   private AbstractModel $abstractModel;
-  private string $type = 'ftfl';
 
   public function __construct()
   {
@@ -23,7 +22,7 @@ class AdminAbstractsController extends Controller
   {
     Log::info('Absztraktok lista megnyitva', ['admin' => auth('admin')->email ?? null], 'admin');
 
-    $abstracts = $this->paginator->data($this->abstractModel->findAllBy('type', $this->type) ?? [])
+    $abstracts = $this->paginator->data($this->abstractModel->findAllBy('type', EVENT_TYPE) ?? [])
       ->paginate(10);
 
     return Response::view('admin/abstracts/index', 'admin-layout', [
@@ -68,7 +67,7 @@ class AdminAbstractsController extends Controller
 
 
   public function export() {
-    $abstracts = obj_to_arr($this->abstractModel->findAllBy('type', $this->type)) ?? [];
+    $abstracts = obj_to_arr($this->abstractModel->findAllBy('type', EVENT_TYPE)) ?? [];
     // export with Excel class and download
     $exporter = new Excel();
     $exporter->data($abstracts)

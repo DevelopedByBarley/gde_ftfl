@@ -24,7 +24,7 @@ class AdminSubscriberController extends Controller
       'admin' => auth('admin')->email ?? null
     ], 'admin');
 
-    $data = $this->subscriber->getByConference('ftfl');
+    $data = $this->subscriber->getByConference(EVENT_TYPE) ?? [];
     $subscribers = $this->paginator->data($data)->filter($_GET['search'] ?? null, ['email', 'name'])->paginate(20);
 
     return Response::view('admin/subscribers/index', 'admin-layout', [
@@ -80,7 +80,7 @@ class AdminSubscriberController extends Controller
   {
     try {
       Log::info('FTFL feliratkozók export indítva', ['admin' => auth('admin')->email ?? null], 'admin');
-      $this->subscriber->exportSubscribersToExcelByConference('ftfl', 'subscribers-ftfl.xlsx');
+      $this->subscriber->exportSubscribersToExcelByConference(EVENT_TYPE, 'subscribers-ftfl.xlsx');
     } catch (\Throwable $e) {
       Log::error('FTFL feliratkozók export hiba', ['message' => $e->getMessage(), 'admin' => auth('admin')->email ?? null], 'admin');
       return $this->toast->danger('Hiba történt az export során.')->back();

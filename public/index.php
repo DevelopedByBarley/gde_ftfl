@@ -7,6 +7,7 @@ use Core\Session;
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+// Event types ['ftfl', 'artificial_intelligence', 'information_security', 'drone_technology']
 define('EVENT_TYPE', 'ftfl');   
 define('ABSTRACT_TYPE', 'ftfl');
 define('EVENT_STARTED', false);
