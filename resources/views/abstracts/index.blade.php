@@ -10,13 +10,14 @@
                     <div class="mb-3">
                         <label class="form-label fw-semibold text-main-blue" for="abstractName">Név</label>
                         <input class="form-control" id="abstractName" name="name" type="text"
-                            value="<?= old('name') ?>" required placeholder="Név">
+                           data-validate="required|string|min:3|max:100"  value="<?= old('name') ?>" required placeholder="Név">
                         <?= errors('name', session('errors')) ?>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label fw-semibold text-main-blue" for="abstractEmail">Email</label>
                         <input class="form-control" id="abstractEmail" name="email" type="email"
+                            data-validate="required|email|max:255"
                             value="<?= old('email') ?>" required placeholder="Email">
                         <?= errors('email', session('errors')) ?>
                     </div>
@@ -28,6 +29,8 @@
                         <?= errors('abstract_file', session('errors')) ?>
                     </div>
                     <div class="small text-main-blue mb-4">Max. 3 MB</div>
+
+                    
 
                     <div class="text-center mt-4">
                         <button class="btn btn-lg text-white px-5 bg-main-blue rounded-pill" type="submit">

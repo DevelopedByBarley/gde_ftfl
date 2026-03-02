@@ -60,6 +60,7 @@ class Subscriber extends Model
         'Company' => $subscriber->company ?? '',
         'Phone' => $subscriber->phone ?? '',
         'Conferences' => $subscriber->conferences ?? '',
+        'Registration_Type' => $subscriber->registration_type ?? '',
         'Created At' => $subscriber->created_at ?? '',
       ];
     }, $subscribers);
@@ -101,5 +102,50 @@ class Subscriber extends Model
   public function export()
   {
     $this->exportSubscribersToExcelByConference($this->type, 'subscribers-ftfl.xlsx');
+  }
+
+  public function exportOnlySpeakersToExcel()
+  {
+    $subscribers = $this->getByConference($this->type);
+
+    if (empty($subscribers)) {
+      throw new \Exception("Nincsenek előfizetők az exportáláshoz.");
+    }
+
+    $speakers = array_values(array_filter($subscribers, function ($subscriber) {
+      return isset($subscriber->registration_type) && strtolower($subscriber->registration_type) === 'speaker';
+    }));
+
+    if (empty($speakers)) {
+      throw new \Exception("Nincsenek előfizetők a megadott konferenciára.");
+    }
+
+    $data = $this->buildExportData($speakers);
+
+    (new \Core\Excel())->data($data)->download('speakers.xlsx');
+  }
+
+
+  public function exportOnlyAttendeesToExcel()
+  {
+    $subscribers = $this->getByConference($this->type);
+
+
+    if (empty($subscribers)) {
+      throw new \Exception("Nincsenek előfizetők az exportáláshoz.");
+    }
+
+    $attendees = array_values(array_filter($subscribers, function ($subscriber) {
+      return isset($subscriber->registration_type) && strtolower($subscriber->registration_type) === 'attendee';
+    }));
+
+    if (empty($attendees)) {
+      throw new \Exception("Nincsenek előfizetők a megadott konferenciára.");
+    }
+
+    $data = $this->buildExportData($attendees);
+
+
+    (new \Core\Excel())->data($data)->download('attendees.xlsx');
   }
 }

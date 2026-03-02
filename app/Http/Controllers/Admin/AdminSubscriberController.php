@@ -87,6 +87,29 @@ class AdminSubscriberController extends Controller
     }
   }
 
+  public function exportOnlySpeakers()
+  {
+    try {
+      Log::info('Csak előadók export indítva', ['admin' => auth('admin')->email ?? null], 'admin');
+      $this->subscriber->exportOnlySpeakersToExcel();
+    } catch (\Throwable $e) {
+      Log::error('Csak előadók export hiba', ['message' => $e->getMessage(), 'admin' => auth('admin')->email ?? null], 'admin');
+      return $this->toast->danger('Hiba történt az export során.')->back();
+    }
+  }
+
+
+  public function exportOnlyAttendee()
+  {
+    try {
+      Log::info('Csak FTFL előadók export indítva', ['admin' => auth('admin')->email ?? null], 'admin');
+      $this->subscriber->exportOnlyAttendeesToExcel();
+    } catch (\Throwable $e) {
+      Log::error('Csak FTFL előadók export hiba', ['message' => $e->getMessage(), 'admin' => auth('admin')->email ?? null], 'admin');
+      return $this->toast->danger('Hiba történt az export során.')->back();
+    }
+  }
+
   public function create()
   {
     return abort(404);

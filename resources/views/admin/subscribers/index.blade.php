@@ -15,6 +15,25 @@ foreach ($confItems as $item) {
 
             <main class="pt-3 pb-5 bg-surface-secondary">
                 <div class="container-fluid px-3 px-lg-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                                <a href="/admin/subscribers/export/attendees" class="btn btn-outline-warning btn-sm">
+                                    <i class="bi bi-download me-1"></i><?= EVENT_TYPE ?> Résztvevők exportálása
+                                </a>
+                                <a href="/admin/subscribers/export/speakers" class="btn btn-outline-info btn-sm">
+                                    <i class="bi bi-download me-1"></i><?= EVENT_TYPE ?> Előadók exportálása
+                                </a>
+                                <a href="/admin/subscribers/export/<?= EVENT_TYPE ?>"
+                                    class="btn btn-outline-success btn-sm">
+                                    <i class="bi bi-download me-1"></i><?= EVENT_TYPE ?> összes exportálása
+                                </a>
+                                <a href="/admin/subscribers/export/all" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-download me-1"></i>Összes export
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card border-0 shadow-sm mb-4">
                         <div
                             class="card-header d-flex flex-column flex-md-row align-items-md-center justify-content-between bg-white">
@@ -22,23 +41,16 @@ foreach ($confItems as $item) {
                                 <h5 class="mb-1">Feliratkozók</h5>
                                 <p class="text-muted small mb-0">Konferencia feliratkozók listája és exportálása.</p>
                             </div>
-                            <div class="d-flex flex-column flex-md-row gap-2">
-                                <form class="d-flex" method="GET" action="">
-                                    <input type="text" name="search" class="form-control form-control-sm me-2"
-                                        placeholder="Keresés név, email, cég, telefon"
-                                        value="<?= htmlspecialchars($_GET['search'] ?? '', ENT_QUOTES, 'UTF-8') ?>">
-                                    <button class="btn btn-outline-secondary btn-sm d-flex" type="submit">
-                                        <i class="bi bi-search me-1"></i>Keresés
-                                    </button>
-                                </form>
-                                <a href="/admin/subscribers/export/ftfl" class="btn btn-outline-primary btn-sm">
-                                    <i class="bi bi-download me-1"></i>FTFL export
-                                </a>
-                                <a href="/admin/subscribers/export/all" class="btn btn-primary btn-sm">
-                                    <i class="bi bi-download me-1"></i>Összes export
-                                </a>
-                            </div>
+                            <form class="d-flex" method="GET" action="">
+                                <input type="text" name="search" class="form-control form-control-sm me-2"
+                                    placeholder="Keresés név, email, cég, telefon"
+                                    value="<?= htmlspecialchars($_GET['search'] ?? '', ENT_QUOTES, 'UTF-8') ?>">
+                                <button class="btn btn-outline-secondary btn-sm d-flex" type="submit">
+                                    <i class="bi bi-search me-1"></i>Keresés
+                                </button>
+                            </form>
                         </div>
+
 
                         <div class="table-responsive">
                             <table class="table align-middle mb-0">

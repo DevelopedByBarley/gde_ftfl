@@ -29,20 +29,23 @@ class AbstractUploadController extends Controller
       $file = $this->request->file('abstract_file');
 
       $validated = $this->request->validate([
-        'name' => ['required', 'string', 'min:3', 'max:100', 'split', 'alpha'],
+        'name' => ['required', 'string', 'min:3', 'max:100'],
         'email' => ['required', 'email', 'max:255'],
       ]);
 
       // Validate file size
       if ($file['size'] > 5 * 1024 * 1024) { // 5MB limit
+        Session::flash('errors', ['abstract_file' => ['errors' => ['Az absztrakt fájl mérete nem haladhatja meg az 5MB-ot.']]]);
+        Session::flash('old', $this->request->all());
         $this->toast->danger('Az absztrakt fájl mérete nem haladhatja meg az 5MB-ot.')->back();
       }
-      
+
       // Set whitelist before adding the file
       $savedFileName = $this->storage
         ->setWhiteList(['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'])
         ->file($file)
         ->save('/storage/uploads/abstracts/' . $this->type);
+
 
       if (!$savedFileName) {
         $this->toast->danger('Az absztrakt feltöltése nem sikerült. Kérjük próbálja meg újra.')->back();
@@ -55,8 +58,10 @@ class AbstractUploadController extends Controller
 
       $last_id = $this->abstractModel->create($validated);
 
-      if(!$last_id) {
-        $this->storage->deletePrevImages('/storage/uploads/abstracts/ai', [$savedFileName]);
+      if (!$last_id) {
+        Session::flash('errors', ['abstract_file' => ['errors' => ['Az absztrakt adatbázisba mentése nem sikerült. Kérjük próbálja meg újra.']]]);
+        Session::flash('old', $this->request->all());
+        $this->storage->deletePrevImages('/storage/uploads/abstracts/' . $this->type, [$savedFileName]);
         $this->toast->danger('Az absztrakt adatbázisba mentése nem sikerült. Kérjük próbálja meg újra.')->back();
       }
 
@@ -68,4 +73,3 @@ class AbstractUploadController extends Controller
     }
   }
 }
-
