@@ -59,15 +59,41 @@ class Response
 
   public static function download($filePath, $fileName = null)
   {
-    if (!file_exists($filePath)) {
-      self::error("File not found", 404);
+    if (!is_file($filePath) || !is_readable($filePath)) {
+      self::error('File not found', 404);
+      return; // ha self::error nem exitel
     }
+
+    // Ha bármi kiment korábban (BOM/whitespace/warning), tönkreteszi a bináris fájlt
+    if (function_exists('ob_get_level') && ob_get_level() > 0) {
+      while (ob_get_level() > 0) {
+        @ob_end_clean();
+      }
+    }
+
+    $downloadName = $fileName ? $fileName : basename($filePath);
+
+    // ASCII fallback + RFC5987 UTF-8 fájlnév
+    $fallback = preg_replace('/[^A-Za-z0-9.\-_]/', '_', $downloadName);
+    $encoded  = rawurlencode($downloadName);
 
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename=' . ($fileName ?: basename($filePath)));
+    header('X-Content-Type-Options: nosniff');
+    header('Content-Transfer-Encoding: binary');
+
+    // FONTOS: idézőjelek + filename* az ékezetekhez/szóközhöz
+    header('Content-Disposition: attachment; filename="' . $fallback . '"; filename*=UTF-8\'\'' . $encoded);
+
     header('Content-Length: ' . filesize($filePath));
-    readfile($filePath);
+    header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+    header('Pragma: no-cache');
+    header('Expires: 0');
+
+    $ok = readfile($filePath);
+    if ($ok === false) {
+      // itt már ne echo-zz, max logolj
+    }
     exit;
   }
 

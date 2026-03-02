@@ -5,7 +5,7 @@
                 <div class="row align-items-center justify-content-between g-3 g-md-4">
                     <div class="col-12 col-md-3">
                         <div class="d-flex align-items-center">
-                            <img style="width: 300px" src="<?= public_file('images/base/GDE_logo_wht_RGB_vedett.png') ?> "
+                            <img style="width: 300px" src="<?= public_file('images/base/gde-logo-white.png') ?> "
                                 alt="">
                         </div>
                     </div>
