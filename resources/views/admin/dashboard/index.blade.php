@@ -7,28 +7,22 @@ $statCards = [
     'color' => 'primary',
   ],
   [
-    'label' => 'Blogbejegyzések',
-    'value' => $stats['blogs'] ?? 0,
-    'icon' => 'bi-journal-text',
+    'label' => 'Feliratkozók',
+    'value' => $stats['subscribers'] ?? 0,
+    'icon' => 'bi-envelope-paper',
     'color' => 'success',
   ],
   [
-    'label' => 'Programok',
-    'value' => $stats['programs'] ?? 0,
-    'icon' => 'bi-calendar-event',
+    'label' => 'Absztraktok',
+    'value' => $stats['abstracts'] ?? 0,
+    'icon' => 'bi-file-earmark-text',
     'color' => 'info',
   ],
   [
-    'label' => 'Galéria képek',
-    'value' => $stats['gallery_images'] ?? 0,
-    'icon' => 'bi-image',
+    'label' => 'Aktivitások',
+    'value' => $stats['activities'] ?? 0,
+    'icon' => 'bi-activity',
     'color' => 'warning',
-  ],
-  [
-    'label' => 'Fájlok',
-    'value' => $stats['files'] ?? 0,
-    'icon' => 'bi-folder2-open',
-    'color' => 'danger',
   ],
 ];
 ?>
@@ -42,7 +36,7 @@ $statCards = [
         <div class="container-fluid px-3 px-lg-5">
           <div class="row g-3 g-lg-4 mb-5">
             <?php foreach ($statCards as $card): ?>
-            <div class="col-12 col-sm-6 col-xl-4">
+            <div class="col-12 col-sm-6 col-xl-3">
               <div class="card shadow-sm border-0 h-100 hover-lift">
                 <div class="card-body d-flex align-items-center justify-content-between p-4">
                   <div>
@@ -63,43 +57,126 @@ $statCards = [
               <div class="card shadow-sm border-0 h-100">
                 <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center py-3">
                   <div>
-                    <h5 class="mb-1 fw-bold">Legutóbbi blogbejegyzések</h5>
-                    <p class="text-muted small mb-0">Friss cikkek publikálási idővel.</p>
+                    <h5 class="mb-1 fw-bold">Legutóbbi feliratkozók</h5>
+                    <p class="text-muted small mb-0">A legfrissebb konferencia feliratkozások.</p>
                   </div>
-                  <a href="/admin/blog" class="btn btn-outline-primary btn-sm">
-                    <i class="bi bi-arrow-right-short"></i>Összes blog
+                  <a href="/admin/subscribers" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-arrow-right-short"></i>Összes feliratkozó
                   </a>
                 </div>
                 <div class="table-responsive">
                   <table class="table align-middle mb-0">
                     <thead class="table-light">
                       <tr>
-                        <th class="py-3">Cím</th>
-                        <th class="py-3">Publikálva</th>
+                        <th class="py-3">Név</th>
+                        <th class="py-3">Email</th>
                         <th class="py-3">Létrehozva</th>
-                        <th class="text-end py-3">Művelet</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <?php if (empty($recentBlogs)): ?>
+                      <?php if (empty($recentSubscribers)): ?>
                       <tr>
-                        <td colspan="4" class="text-center text-muted py-5">Nincs még blogbejegyzés.</td>
+                        <td colspan="3" class="text-center text-muted py-5">Nincs megjeleníthető feliratkozó.</td>
                       </tr>
                       <?php else: ?>
-                      <?php foreach ($recentBlogs as $blog): ?>
+                      <?php foreach ($recentSubscribers as $subscriber): ?>
                       <tr>
-                        <td class="fw-semibold text-truncate py-3" style="max-width: 280px;">
-                          <?= htmlspecialchars($blog->title ?? '—') ?>
+                        <td class="fw-semibold py-3"><?= htmlspecialchars($subscriber->name ?? '—') ?></td>
+                        <td class="py-3"><?= htmlspecialchars($subscriber->email ?? '—') ?></td>
+                        <td class="py-3">
+                          <?= !empty($subscriber->created_at) ? date('Y.m.d H:i', strtotime($subscriber->created_at)) : '—' ?>
                         </td>
-                        <td class="py-3"><?= !empty($blog->published_at) ? date('Y.m.d H:i', strtotime($blog->published_at)) : '—' ?></td>
-                        <td class="py-3"><?= !empty($blog->created_at) ? date('Y.m.d H:i', strtotime($blog->created_at)) : '—' ?></td>
-                        <td class="text-end py-3">
-                          <a href="/admin/blog/<?= $blog->id ?>" class="btn btn-sm btn-outline-primary">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                          <a href="/admin/blog/edit/<?= $blog->id ?>" class="btn btn-sm btn-outline-secondary">
-                            <i class="bi bi-pencil"></i>
-                          </a>
+                      </tr>
+                      <?php endforeach; ?>
+                      <?php endif; ?>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-4">
+              <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center py-3">
+                  <h5 class="mb-0 fw-bold">Legutóbbi absztraktok</h5>
+                  <a href="/admin/abstracts" class="btn btn-outline-secondary btn-sm">Lista</a>
+                </div>
+                <div class="list-group list-group-flush">
+                  <?php if (empty($recentAbstracts)): ?>
+                  <div class="list-group-item text-muted text-center py-5">Nincs megjeleníthető absztrakt.</div>
+                  <?php else: ?>
+                  <?php foreach ($recentAbstracts as $abstract): ?>
+                  <div class="list-group-item d-flex justify-content-between align-items-start py-3">
+                    <div class="me-2">
+                      <div class="fw-semibold"><?= htmlspecialchars($abstract->name ?? '—') ?></div>
+                      <div class="text-muted small"><?= htmlspecialchars($abstract->email ?? '') ?></div>
+                      <div class="text-muted small">
+                        <?= htmlspecialchars($abstract->originalFileName ?? $abstract->fileName ?? '') ?>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="text-muted small">
+                        <?= !empty($abstract->created_at) ? date('Y.m.d', strtotime($abstract->created_at)) : '' ?>
+                      </div>
+                      <a href="/admin/abstracts/download/<?= $abstract->id ?>" class="btn btn-sm btn-outline-primary mt-2">
+                        <i class="bi bi-download"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <?php endforeach; ?>
+                  <?php endif; ?>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-12 col-xl-8">
+              <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center py-3">
+                  <div>
+                    <h5 class="mb-1 fw-bold">Legutóbbi aktivitások</h5>
+                    <p class="text-muted small mb-0">Admin műveletek és rendszer események.</p>
+                  </div>
+                  <a href="/admin/activities" class="btn btn-outline-primary btn-sm">Naplók</a>
+                </div>
+                <div class="table-responsive">
+                  <table class="table align-middle mb-0">
+                    <thead class="table-light">
+                      <tr>
+                        <th class="py-3">Akció</th>
+                        <th class="py-3">Státusz</th>
+                        <th class="py-3">Leírás</th>
+                        <th class="py-3">Létrehozva</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php if (empty($recentActivities)): ?>
+                      <tr>
+                        <td colspan="4" class="text-center text-muted py-5">Nincs aktivitás bejegyzés.</td>
+                      </tr>
+                      <?php else: ?>
+                      <?php foreach ($recentActivities as $activity): ?>
+                      <?php
+                        $status = strtolower($activity->status ?? '');
+                        if ($status === 'success') {
+                          $badgeClass = 'bg-success-subtle text-success border-success-subtle';
+                        } elseif ($status === 'failed' || $status === 'error') {
+                          $badgeClass = 'bg-danger-subtle text-danger border-danger-subtle';
+                        } else {
+                          $badgeClass = 'bg-secondary-subtle text-secondary border-secondary-subtle';
+                        }
+                      ?>
+                      <tr>
+                        <td class="fw-semibold py-3"><?= htmlspecialchars($activity->action ?? '—') ?></td>
+                        <td class="py-3">
+                          <span class="badge <?= $badgeClass ?> border"><?= $activity->status ?? '—' ?></span>
+                        </td>
+                        <td class="py-3 text-truncate" style="max-width: 260px;">
+                          <?= htmlspecialchars($activity->description ?? '—') ?>
+                        </td>
+                        <td class="py-3">
+                          <?= !empty($activity->created_at) ? date('Y.m.d H:i', strtotime($activity->created_at)) : '—' ?>
                         </td>
                       </tr>
                       <?php endforeach; ?>
@@ -132,104 +209,6 @@ $statCards = [
                         <?= !empty($admin->created_at) ? date('Y.m.d', strtotime($admin->created_at)) : '' ?>
                       </div>
                     </div>
-                  </div>
-                  <?php endforeach; ?>
-                  <?php endif; ?>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-12 col-xl-4">
-              <div class="card shadow-sm border-0 h-100">
-                <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center py-3">
-                  <h6 class="mb-0 fw-bold">Legutóbbi programok</h6>
-                  <a href="/admin/programs" class="btn btn-outline-primary btn-sm">Összes</a>
-                </div>
-                <div class="list-group list-group-flush">
-                  <?php if (empty($recentPrograms)): ?>
-                  <div class="list-group-item text-muted text-center py-5">Nincs program.</div>
-                  <?php else: ?>
-                  <?php foreach ($recentPrograms as $program): ?>
-                  <div class="list-group-item d-flex justify-content-between align-items-start py-3">
-                    <div class="me-2">
-                      <div class="fw-semibold text-truncate" style="max-width: 220px;">
-                        <?= htmlspecialchars($program->title ?? '—') ?>
-                      </div>
-                      <div class="text-muted small">
-                        <?= !empty($program->date) ? date('Y.m.d H:i', strtotime($program->date)) : '—' ?>
-                      </div>
-                    </div>
-                    <span class="badge <?= !empty($program->published_at) ? 'bg-success' : 'bg-secondary' ?> text-white">
-                      <?= !empty($program->published_at) ? 'Publikált' : 'Vázlat' ?>
-                    </span>
-                  </div>
-                  <?php endforeach; ?>
-                  <?php endif; ?>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-4">
-              <div class="card shadow-sm border-0 h-100">
-                <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center py-3">
-                  <h6 class="mb-0 fw-bold">Legutóbbi galéria képek</h6>
-                  <a href="/admin/gallery" class="btn btn-outline-primary btn-sm">Galéria</a>
-                </div>
-                <div class="list-group list-group-flush">
-                  <?php if (empty($recentGalleryImages)): ?>
-                  <div class="list-group-item text-muted text-center py-5">Még nincs kép feltöltve.</div>
-                  <?php else: ?>
-                  <?php foreach ($recentGalleryImages as $image): ?>
-                  <div class="list-group-item d-flex align-items-center gap-3 py-3">
-                    <?php if (!empty($image->fileName)): ?>
-                    <img src="<?= public_file('images/gallery/' . $image->fileName) ?>" alt="<?= htmlspecialchars($image->title ?? '') ?>"
-                      class="rounded" style="width: 56px; height: 56px; object-fit: cover;">
-                    <?php else: ?>
-                    <div class="rounded bg-light d-flex align-items-center justify-content-center"
-                      style="width: 56px; height: 56px;">
-                      <i class="bi bi-image text-muted"></i>
-                    </div>
-                    <?php endif; ?>
-                    <div>
-                      <div class="fw-semibold text-truncate" style="max-width: 180px;">
-                        <?= htmlspecialchars($image->title ?? 'Kép') ?>
-                      </div>
-                      <div class="text-muted small">
-                        <?= !empty($image->created_at) ? date('Y.m.d', strtotime($image->created_at)) : '' ?>
-                      </div>
-                    </div>
-                  </div>
-                  <?php endforeach; ?>
-                  <?php endif; ?>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-4">
-              <div class="card shadow-sm border-0 h-100">
-                <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center py-3">
-                  <h6 class="mb-0 fw-bold">Legutóbbi fájlok</h6>
-                  <a href="/admin/files" class="btn btn-outline-primary btn-sm">Összes</a>
-                </div>
-                <div class="list-group list-group-flush">
-                  <?php if (empty($recentFiles)): ?>
-                  <div class="list-group-item text-muted text-center py-5">Nincs feltöltött fájl.</div>
-                  <?php else: ?>
-                  <?php foreach ($recentFiles as $file): ?>
-                  <div class="list-group-item d-flex justify-content-between align-items-start py-3">
-                    <div class="me-2">
-                      <div class="fw-semibold text-truncate" style="max-width: 200px;">
-                        <?= htmlspecialchars($file->name ?? $file->fileName ?? 'Fájl') ?>
-                      </div>
-                      <div class="text-muted small">
-                        <?= !empty($file->created_at) ? date('Y.m.d', strtotime($file->created_at)) : '' ?>
-                      </div>
-                    </div>
-                    <a href="/admin/files/edit/<?= $file->id ?>" class="btn btn-sm btn-outline-secondary">
-                      <i class="bi bi-pencil"></i>
-                    </a>
                   </div>
                   <?php endforeach; ?>
                   <?php endif; ?>
