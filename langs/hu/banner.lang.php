@@ -2,7 +2,7 @@
 return [
   'university' => 'Gábor Dénes Egyetem',
   'title' => 'The Future of Teaching The Future of Learning',
-  'date_range' => 'Május 20.',
+  'date_range' => 'Május 21.',
   'city' => 'Gábor Dénes Egyetem, Budapest',
   'year' => '2026',
   'lang' => [

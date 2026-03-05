@@ -5,14 +5,18 @@
                 <div class="row align-items-center justify-content-between g-3 g-md-4">
                     <div class="col-12 col-md-3">
                         <div class="d-flex align-items-center">
-                            <img style="width: 300px" src="<?= public_file('images/base/gde-logo-white.png') ?> "
+                            <img style="width: 250px" src="<?= public_file('images/base/gde-logo-white.png') ?> "
                                 alt="">
+                            <a href="https://gde.hu/erasmus-week-2026" target="_blank">
+                                <img style="width: 250px" src="<?= public_file('images/base/erasmus.jpeg') ?>"
+                                    alt="">
+                            </a>
                         </div>
                     </div>
-
                     <div class="col-12 col-md-8 order-1 order-md-3">
                         <div class="d-flex flex-column align-items-start align-items-md-end">
-                            <div class="d-inline-flex align-items-center gap-2 bg-white rounded-pill px-2 py-1 mb-2 overflow-hidden">
+                            <div
+                                class="d-inline-flex align-items-center gap-2 bg-white rounded-pill px-2 py-1 mb-2 overflow-hidden">
                                 <form action="/lang" method="POST" class="d-inline">
                                     <?= csrf() ?>
                                     <input type="hidden" name="lang" value="en">
@@ -31,8 +35,8 @@
                                     <button type="submit"
                                         class="btn rounded-pill px-3 py-1 fw-semibold d-inline-flex align-items-center gap-2 <?= ($_COOKIE['lang'] ?? '') === 'hu' ? 'bg-main-blue text-white' : 'btn-light text-info' ?>">
                                         <span class="fs-6">
-                                            <img src="<?= public_file('images/base/hun_flag.png') ?>"
-                                                class="rounded" style="width: 25px;" alt="">
+                                            <img src="<?= public_file('images/base/hun_flag.png') ?>" class="rounded"
+                                                style="width: 25px;" alt="">
                                         </span> <span class="small"><?= lang('banner__lang.hu_label') ?></span>
                                     </button>
                                 </form>
