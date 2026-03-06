@@ -35,6 +35,7 @@ class SubscriptionController extends Controller
       // Validate the incoming request data
       $validated = $this->request->validate([
         'registration_type' => ['required', 'string', 'in:attendee|speaker'],
+        'participation_type' => ['required', 'string', 'in:online|inperson'],
         'name' => ['required', 'string', 'min:3', 'max:100'],
         'email' => ['required', 'email', 'max:255'],
         'company' => ['required', 'string', 'min:2', 'max:255'],
@@ -44,6 +45,24 @@ class SubscriptionController extends Controller
         'conferences' => ['required', 'array'],
         'terms_agree' => ['required', 'boolean'],
       ]);
+
+      $allowed = ['artificial_intelligence', 'information_security', 'drone_technology', 'ftfl'];
+      $c = $validated['conferences'] ?? null;
+
+      if (!is_array($c)) {
+        Session::flash('errors', ['conferences' => ['errors' => ['Legalább egy konferenciát ki kell választani.']]]);
+        $this->toast->danger('Legalább egy konferenciát ki kell választani.')->back();
+      }
+
+      $c = array_values(array_filter(array_map(fn($v) => is_string($v) ? trim($v) : '', $c)));
+      $c = array_values(array_diff($c, ['', 'null', 'NULL']));
+
+      if (!$c || array_diff($c, $allowed) || (($validated['registration_type'] ?? '') === 'speaker' && count($c) > 1)) {
+        Session::flash('errors', ['conferences' => ['errors' => ['Érvénytelen konferencia választás.']]]);
+        $this->toast->danger('Érvénytelen konferencia választás.')->back();
+      }
+
+      $validated['conferences'] = $c;
 
 
       // Check if registration type is speaker and if so, we allow only one conference selection
@@ -114,24 +133,24 @@ class SubscriptionController extends Controller
       // Determine language from cookie
       $lang = explode('-', $_COOKIE['lang'] ?? 'hu-HU')[0];
       $templateName = 'feedback-' . $lang;
-      
+
       // Map conference values to translated titles
       $confItems = lang('welcome__registration.all_conf_items');
       $valueToTitle = [];
       foreach ($confItems as $item) {
         $valueToTitle[$item['value']] = $item['title'];
       }
-      
+
       // Translate conference values to titles
-      $new_conference_titles = array_map(function($value) use ($valueToTitle) {
+      $new_conference_titles = array_map(function ($value) use ($valueToTitle) {
         return $valueToTitle[$value] ?? $value;
       }, $new_conferences);
-      
-      $existing_conference_titles = array_map(function($value) use ($valueToTitle) {
+
+      $existing_conference_titles = array_map(function ($value) use ($valueToTitle) {
         return $valueToTitle[$value] ?? $value;
       }, $existing_conferences);
-      
-      
+
+
       // Filter abstract URLs to only include URLs for new conferences
       $new_conference_urls = [];
       if ($validated['registration_type'] === 'speaker') {
@@ -143,21 +162,23 @@ class SubscriptionController extends Controller
             'drone_technology' => 'drone',
             'information_security' => 'drone', // Assuming info security uses drone URL
           ];
-          
+
           if (isset($url_map[$conf_value]) && isset(self::ABSTRACT_UPLOAD_URLS[$url_map[$conf_value]])) {
             $new_conference_urls[$url_map[$conf_value]] = self::ABSTRACT_UPLOAD_URLS[$url_map[$conf_value]];
           }
         }
       }
-    
-      $this->mailer->prepare($validated['email'], 'Conference Registration Confirmation')
+
+      $subject = lang('subscription-mail__subject');
+
+      $this->mailer->prepare($validated['email'], $subject)
         ->template($templateName, [
           'name' => $validated['name'],
           'registration_type' => $validated['registration_type'],
           'new_conferences' => $new_conference_titles,
-          'existing_conferences' => $existing_conference_titles,  
-          'abstract_urls' => $new_conference_urls,        
-          ])
+          'existing_conferences' => $existing_conference_titles,
+          'abstract_urls' => $new_conference_urls,
+        ])
         ->send();
 
       $this->toast->success(lang('welcome__registration.subscription_success'))->back();

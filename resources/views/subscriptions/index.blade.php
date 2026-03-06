@@ -33,6 +33,7 @@
                         </label>
                     </div>
 
+
                     <div class="mb-3">
                         <label class="form-label fw-semibold text-main-blue required"
                             for="regName"><?= lang('welcome__registration.name') ?></label>
@@ -79,6 +80,29 @@
                             <textarea class="form-control" id="speaker_talk_summary" name="speaker_talk_summary" rows="3" required
                                 data-validate="max:1500" placeholder="<?= lang('welcome__registration.speaker_talk_summary') ?>" required><?= old('speaker_talk_summary') ?></textarea>
                         </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-main-blue required" for="attendance_type">
+                            <?= $_COOKIE['lang'] === 'en' ? 'How would you like to attend the event?' : 'Hogyan szeretne részt venni az eseményen?' ?>
+                        </label>
+                    </div>
+                    <div class="btn-group btn-group-toggle d-flex gap-2 mb-4" role="group">
+                        <input type="radio" class="btn-check" name="participation_type" id="onlineAttendance"
+                            value="online" autocomplete="off"
+                            <?= old('participation_type') === 'online' ? 'checked' : '' ?> required>
+                        <label class="btn border border-main-blue text-main-blue flex-grow-1 text-center"
+                            for="onlineAttendance">
+                            <?= $_COOKIE['lang'] === 'en' ? 'Online' : 'Online' ?>
+                        </label>
+
+                        <input type="radio" class="btn-check" name="participation_type" id="inpersonAttendance"
+                            value="inperson" autocomplete="off"
+                            <?= old('participation_type') === 'inperson' ? 'checked' : '' ?> required>
+                        <label class="btn border border-main-blue text-main-blue flex-grow-1 text-center"
+                            for="inpersonAttendance">
+                            <?= $_COOKIE['lang'] === 'en' ? 'In Person' : 'Személyesen' ?>
+                        </label>
                     </div>
 
                     <div class="fw-semibold text-center mb-3 text-main-blue required">
