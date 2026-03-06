@@ -4,9 +4,13 @@ return [
     'hero' => [
         'title' => 'FTFL',
         'subtitle' => '',
-        'description' => 'The conference aims to provide a scientific examination of digital and methodological changes in education and learning.
-The event offers a forum for educators, researchers, and practitioners to share experiences and results related to the educational use of artificial intelligence and other modern technologies.
-The conference contributes to strengthening professional discourse in the fields of e-learning and pedagogy.',
+        'description' => '
+            The conference aims to provide a scholarly forum for examining the digital and methodological transformations in education and learning. The event brings together educators, researchers, and practitioners to share experiences, research findings, and best practices related to the educational use of artificial intelligence and other emerging technologies.
+            By fostering dialogue among experts from various fields, the conference seeks to strengthen professional discourse and contribute to the advancement of knowledge in the areas of e-learning and pedagogy.
+            Who is the conference for ?- alá kérném ezt a javított verziót:
+            The conference targets professionals involved in the digital and methodological renewal of education and learning. We welcome university lecturers, teachers, education researchers, PhD students, and educational technology developers, as well as professionals engaged in institutional and corporate training.
+            The event supports interdisciplinary professional dialogue grounded in both academic research and practical experience.
+',
     ],
     'topics' => [
         [
@@ -59,7 +63,7 @@ The conference contributes to strengthening professional discourse in the fields
         'speaker_talk_summary' => 'Short description',
         'speaker_abstract_upload' => 'Upload abstract',
         'title' => 'Registration',
-        'attendee' => 'Attendee registration',
+        'attendee' => 'Participant registration',
         'speaker' => 'Speaker registration',
         'name' => 'Name',
         'email' => 'Email address',
@@ -191,16 +195,17 @@ The conference contributes to strengthening professional discourse in the fields
             'title' => 'FTFL2026',
             'subtitle' => 'The Future of Teaching The Future of Learning',
             'subsubtitle' => 'International Conference on Digital Educational Methodology',
-            'description' => 'The conference aims to provide a scientific examination of digital and methodological changes in education and learning.
-The event offers a forum for educators, researchers, and practitioners to share experiences and results related to the educational use of artificial intelligence and other modern technologies.
-The conference contributes to strengthening professional discourse in the fields of e-learning and pedagogy.',
+            'description' => '
+              The conference aims to provide a scholarly forum for examining the digital and methodological transformations in education and learning. The event brings together educators, researchers, and practitioners to share experiences, research findings, and best practices related to the educational use of artificial intelligence and other emerging technologies.
+            By fostering dialogue among experts from various fields, the conference seeks to strengthen professional discourse and contribute to the advancement of knowledge in the areas of e-learning and pedagogy.
+            ',
             'date' => '21 May 2026',
             'location' => 'Dennis Gabor University, Budapest',
             'language' => 'HU / EN',
             'cta' => 'View full Summit',
         ],
         'topics' => [
-            'title' => 'Conference topics',
+            'title' => 'Key Topics of the Conference',
             'items' => [
                 [
                     'icon' => 'bi-book',
@@ -230,8 +235,9 @@ The conference contributes to strengthening professional discourse in the fields
         ],
         'audience' => [
             'title' => 'Who is the conference for?',
-            'description' => 'The conference targets professionals involved in the digital and methodological renewal of education and learning. We welcome university lecturers, teachers, education researchers, PhD students, and educational technology developers, as well as professionals working in institutional and corporate training.
-The event supports interdisciplinary professional dialogue based on academic and practical experience.',
+            'description' => 'The conference targets professionals involved in the digital and methodological renewal of education and learning. We welcome university lecturers, teachers, education researchers, PhD students, and educational technology developers, as well as professionals engaged in institutional and corporate training.
+            The event supports interdisciplinary professional dialogue grounded in both academic research and practical experience.
+        ',
         ],
         'agenda' => [
             'title' => 'Schedule',

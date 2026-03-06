@@ -4,8 +4,8 @@ return [
     'hero' => [
         'title' => 'FTFL',
         'subtitle' => '',
-        'description' => 'Az konferencia célja az oktatás és a tanulás területén zajló digitális és módszertani változások tudományos vizsgálata.
-A rendezvény fórumot biztosít az oktatók, kutatók és gyakorlati szakemberek számára a mesterséges intelligencia és más modern technológiák oktatási alkalmazásával kapcsolatos tapasztalatok és eredmények megosztására.
+        'description' => 'A konferencia célja az oktatás és a tanulás területén zajló digitális és módszertani változások tudományos vizsgálata.
+A rendezvény fórumot biztosít oktatók, kutatók és gyakorlati szakemberek számára a mesterséges intelligencia és más modern technológiák oktatási alkalmazásával kapcsolatos tapasztalatok és eredmények megosztására.
 A konferencia hozzájárul az e-learning és az oktatásmódszertan területén kialakuló szakmai diskurzus megerősítéséhez.',
     ],
     'topics' => [
@@ -141,7 +141,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'faq' => [
             [
                 'question' => 'Mikor és hol kerül megrendezésre az esemény?',
-                'answer' => 'Időpont: 2026. május 18–21.<br>Helyszín: 1039 Budapest, Fejér Lipót utca 70.',
+                'answer' => 'A konferencia hét keretében, ami május 18-21-ig tart, az FTFL május 21-én lesz',
             ],
             [
                 'question' => 'Hogyan épül fel egy konferencianap?',
@@ -177,7 +177,8 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
             ],
             [
                 'question' => 'A konferenciára benyújtott absztraktok hol jelennek meg?',
-                'answer' => 'A hivatalosan elfogadott absztraktok absztraktkötetben jelennek meg. Az absztraktkötet a konferencia programfüzeteként is funkcionál.',
+                'answer' => 'A hivatalosan elfogadott absztraktok absztraktkötetben jelennek meg. Az absztraktkötet a konferencia programfüzeteként is funkcionál.
+                Igen, lesz absztrakt kötet, DE aki szeretne angol nyelven publikálni, az megteheti a Digital Horizon folyóiratunkban.',
             ],
             [
                 'question' => 'Kapnak az előadók előadói igazolást?',
@@ -190,8 +191,8 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
             'title' => 'FTFL2026',
             'subtitle' => 'The Future of Teaching The Future of Learning',
             'subsubtitle' => 'International Conference on Digital Educational Methodology',
-            'description' => 'Az konferencia célja az oktatás és a tanulás területén zajló digitális és módszertani változások tudományos vizsgálata.
-A rendezvény fórumot biztosít az oktatók, kutatók és gyakorlati szakemberek számára a mesterséges intelligencia és más modern technológiák oktatási alkalmazásával kapcsolatos tapasztalatok és eredmények megosztására.
+            'description' => 'A konferencia célja az oktatás és a tanulás területén zajló digitális és módszertani változások tudományos vizsgálata.
+A rendezvény fórumot biztosít oktatók, kutatók és gyakorlati szakemberek számára a mesterséges intelligencia és más modern technológiák oktatási alkalmazásával kapcsolatos tapasztalatok és eredmények megosztására.
 A konferencia hozzájárul az e-learning és az oktatásmódszertan területén kialakuló szakmai diskurzus megerősítéséhez.',
             'date' => '2026. Május 21.',
             'location' => 'Gábor Dénes Egyetem, Budapest',
@@ -199,7 +200,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
             'cta' => 'View full Summit',
         ],
         'topics' => [
-            'title' => 'Konferencia témái',
+            'title' => 'Konferencia témái többek között',
             'items' => [
                 [
                     'icon' => 'bi-book',
