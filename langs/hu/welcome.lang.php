@@ -89,6 +89,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'all_conf_items' => [
             [
                 'title' => 'The Future of Intelligence The Future of Implementations',
+                'simple_title' => 'Mesterséges Intelligencia',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
                 'date' => 'Május 18',
@@ -96,6 +97,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
             ],
             [
                 'title' => 'The Future of Security The Future of Trust',
+                'simple_title' => 'Információbiztonság',
                 'value' => 'information_security',
                 'meta' => 'FSFT2026',
                 'date' => 'Május 19',
@@ -103,6 +105,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
             ],
             [
                 'title' => 'The Future of Dronedata The Future of Vision',
+                'simple_title' => 'Drón Technológia',
                 'value' => 'drone_technology',
                 'meta' => 'FDFV2026',
                 'date' => 'Május 20',
@@ -110,6 +113,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
             ],
             [
                 'title' => 'The Future of Teaching The Future of Learning',
+                'simple_title' => 'Oktatás Módszertan',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
                 'date' => 'Május 21',
