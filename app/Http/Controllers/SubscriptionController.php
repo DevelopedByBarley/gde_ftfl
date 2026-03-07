@@ -15,6 +15,13 @@ class SubscriptionController extends Controller
     'ai' => 'https://aikonferencia.gde.hu/absztrakt',
     'ftfl' => 'https://ftfl.gde.hu/absztrakt',
     'drone' => 'https://dronkonferencia.gde.hu/absztrakt',
+    'fsft' => 'https://informaciobiztonsag.gde.hu/absztrakt',
+  ];
+  private $short_map = [
+    'artificial_intelligence' => 'FIFI',
+    'ftfl' => 'FTFL',
+    'drone_technology' => 'FDFV',
+    'information_security' => 'FSFT', // Assuming info security uses drone URL
   ];
 
   public function __construct()
@@ -42,9 +49,11 @@ class SubscriptionController extends Controller
         'phone' => ['required', 'min:5', 'max:20'],
         'speaker_talk_title' => ['nullable', 'string', 'max:255'],
         'speaker_talk_summary' => ['nullable', 'string', 'max:3000'],
-        'conferences' => ['required', 'array'],
+        'conferences' => ['required'],
         'terms_agree' => ['required', 'boolean'],
       ]);
+
+      $validated['is_erasmus'] = isset($_POST['is_erasmus']) && $_POST['is_erasmus'] == '1' ? 1 : 0;
 
       $allowed = ['artificial_intelligence', 'information_security', 'drone_technology', 'ftfl'];
       $c = $validated['conferences'] ?? null;
@@ -63,7 +72,6 @@ class SubscriptionController extends Controller
       }
 
       $validated['conferences'] = $c;
-
 
       // Check if registration type is speaker and if so, we allow only one conference selection
       if ($validated['registration_type'] === 'speaker' && count($validated['conferences']) > 1) {
@@ -120,13 +128,14 @@ class SubscriptionController extends Controller
       $validated['conferences'] = json_encode($validated['conferences']);
       $validated['created_at'] = date('Y-m-d H:i:s');
 
-
       $created_id = $this->subscriber->create($validated);
 
-
+      // If creation failed, show error message and return back!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       if (!$created_id) {
         $this->toast->danger(lang('welcome__registration.subscription_failed'))->back();
       }
+
+
 
       $new_conferences = json_decode($validated['conferences'], true);
 
@@ -160,7 +169,7 @@ class SubscriptionController extends Controller
             'artificial_intelligence' => 'ai',
             'ftfl' => 'ftfl',
             'drone_technology' => 'drone',
-            'information_security' => 'drone', // Assuming info security uses drone URL
+            'information_security' => 'fsft', // Assuming info security uses drone URL
           ];
 
           if (isset($url_map[$conf_value]) && isset(self::ABSTRACT_UPLOAD_URLS[$url_map[$conf_value]])) {
@@ -169,11 +178,17 @@ class SubscriptionController extends Controller
         }
       }
 
-      $subject = lang('subscription-mail__subject');
+      
+      $conferences_string_by_short = implode(', ', array_map(function($conf) {
+        return $this->short_map[$conf] ?? $conf;
+      }, $new_conferences));
 
+      $paricipation_type_str = $validated['participation_type'] === 'online' ? (($_COOKIE['lang'] === 'en') ? 'Online' : 'Online') : (($_COOKIE['lang'] === 'en') ? 'In Person' : 'Személyes');
+      $subject = lang('subscription-mail__subject') . ' - ' . $conferences_string_by_short;
       $this->mailer->prepare($validated['email'], $subject)
         ->template($templateName, [
           'name' => $validated['name'],
+          'participation_type' => $paricipation_type_str,
           'registration_type' => $validated['registration_type'],
           'new_conferences' => $new_conference_titles,
           'existing_conferences' => $existing_conference_titles,

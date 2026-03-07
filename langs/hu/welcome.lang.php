@@ -68,6 +68,9 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'select_conferences' => 'Válaszd ki, mely konferenciákon vennél részt',
         'agree' => 'Elfogadom az ÁSZF-et',
         'submit' => 'Küldés',
+        'horizons_info' => 'Amennyiben szeretne jelentkezni további eseményeinkre is, kérjük látogasson el a',
+        'horizons_link_label' => 'GDE Horizons oldalára',
+        'help_text' => 'Ha bármilyen kérdés vagy probléma felmerülne, írjanak ide:',
         'help_text' => 'Ha bármilyen kérdés vagy probléma felmerülne, írjanak ide:',
         'already_subscribed' => 'Ön már regisztrált a következő konferenciákra: ',
         'subscription_success' => 'Sikeres regisztráció!',
@@ -76,6 +79,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'conf_items' => [
             [
                 'title' => 'The Future of Teaching The Future of Learning',
+                'simple_title' => 'Oktatás Módszertan',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
                 'date' => 'Május 21',
@@ -84,9 +88,9 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         ],
         'all_conf_items' => [
             [
-                'title' => 'The Future of Intelligence The Future of Applications',
+                'title' => 'The Future of Intelligence The Future of Implementations',
                 'value' => 'artificial_intelligence',
-                'meta' => 'FIFA2026',
+                'meta' => 'FIFI2026',
                 'date' => 'Május 18',
                 'fileName' => 'ai.png',
             ],
@@ -300,15 +304,25 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
     ],
     'footer' => [
         'about_title' => 'Gábor Dénes Egyetem',
-        'about_text' => 'A GDE International Science Summit kutatókat, iparági vezetőket és innovátorokat hoz össze a technológia és a tudomány jövőjének bemutatására.',
+        'about_text' => 'A GDE Digital Horizons Week kutatókat, iparági vezetőket és innovátorokat hoz össze a technológia és a tudomány jövőjének bemutatására.',
         'quick_links' => 'Gyors linkek',
         'links' => [
-            'home' => 'Kezdőlap',
-            'registration' => 'Regisztráció',
-            'speakers' => 'Előadók',
-            'contact' => 'Kapcsolat',
-            'privacy' => 'Adatvédelem',
-            'terms' => 'ÁSZF',
+            'home' => [
+                'label' => 'Kezdőlap',
+                'url' => '/',
+            ],
+            'registration' => [
+                'label' => 'Regisztráció',
+                'url' => '/subscription',
+            ],
+            'privacy' => [
+                'label' => 'Adatvédelmi szabályzat',
+                'url' => '/privacy',
+            ],
+            'terms' => [
+                'label' => 'Általános Szerződési Feltételek',
+                'url' => '/terms',
+            ],
         ],
         'contact_title' => 'Kapcsolat',
         'contact_city' => 'Budapest, HU',
@@ -318,16 +332,6 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'newsletter_text' => 'Értesülj a konferencia híreiről.',
         'newsletter_placeholder' => 'E-mail cím',
         'newsletter_button' => 'Feliratkozás',
-        'copyright' => '© 2026 GDE International Science Summit',
-        'quick_order' => [
-            'home',
-            'registration',
-            'speakers',
-            'contact',
-        ],
-        'legal_order' => [
-            'privacy',
-            'terms',
-        ],
+        'copyright' => '© 2026 GDE  Digital Horizons Week',
     ],
 ];

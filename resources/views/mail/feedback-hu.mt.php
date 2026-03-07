@@ -1,3 +1,44 @@
+<?php
+$speakerConferenceName = $new_conferences[0] ?? '';
+$speakerConferenceKey = '';
+$speakerAbstractUrl = '';
+if (!empty($abstract_urls) && is_array($abstract_urls)) {
+  foreach ($abstract_urls as $key => $url) {
+    $speakerConferenceKey = (string) $key;
+    $speakerAbstractUrl = (string) $url;
+    break;
+  }
+}
+$speakerConferenceShortMap = [
+  'ai' => 'FIFI',
+  'fsft' => 'FSFT',
+  'drone' => 'FDFV',
+  'ftfl' => 'FTFL',
+];
+$speakerConferenceDateMap = [
+  'ai' => '2026. május 18.',
+  'fsft' => '2026. május 19.',
+  'drone' => '2026. május 20.',
+  'ftfl' => '2026. május 21.',
+];
+$speakerConferenceShort = $speakerConferenceShortMap[$speakerConferenceKey] ?? strtoupper($speakerConferenceKey);
+$speakerConferenceDate = $speakerConferenceDateMap[$speakerConferenceKey] ?? '';
+$speakerRequirementsUrl = $speakerAbstractUrl;
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
@@ -46,7 +87,9 @@
                                       <tbody>
                                         <tr>
                                           <td style="line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 20px;" align="left">
-                                            <h1 class="h3" style="padding-top: 0; padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: 28px; line-height: 33.6px; margin: 0;" align="left">GDE Konferencia Regisztr&#225;ci&#243;</h1>
+                                            <h1 class="h3" style="padding-top: 0; padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: 28px; line-height: 33.6px; margin: 0;" align="left">
+                                              <?= $registration_type === 'speaker' ? 'Visszaigazol&#225;s &#8211; ' . htmlspecialchars($speakerConferenceShort) . ' regisztr&#225;ci&#243;' : 'GDE Konferencia Regisztr&#225;ci&#243;' ?>
+                                            </h1>
                                             <table class="s-2 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
                                               <tbody>
                                                 <tr>
@@ -56,7 +99,9 @@
                                                 </tr>
                                               </tbody>
                                             </table>
-                                            <h5 class="text-teal-700" style="color: #13795B; padding-top: 0; padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: 20px; line-height: 24px; margin: 0;" align="left">Kedves <?= $name ?>!</h5>
+                                            <h5 class="text-teal-700" style="color: #13795B; padding-top: 0; padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: 20px; line-height: 24px; margin: 0;" align="left">
+                                              <?= $registration_type === 'speaker' ? 'Tisztelt El&#337;ad&#243;!' : 'Kedves ' . htmlspecialchars($name) . '!' ?>
+                                            </h5>
                                             <table class="s-5 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
                                               <tbody>
                                                 <tr>
@@ -85,7 +130,7 @@
                                             </table>
                                             <div class="space-y-3">
                                               <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
-                                                Köszönjük, hogy regisztrált a Dennis Gabor Digital Horizons Week rendezvényére <strong><?= $registration_type === 'speaker' ? 'előadóként' : 'résztvevőként' ?></strong>.
+                                                Jelentkez&#233;s m&#243;dja: <strong><?= htmlspecialchars($participation_type ?? '') ?></strong>
                                               </p>
                                               <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
                                                 <tbody>
@@ -96,82 +141,154 @@
                                                   </tr>
                                                 </tbody>
                                               </table>
-                                              
-                                              <?php if (!empty($new_conferences)): ?>
-                                              <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
-                                                <strong>Most regisztrált a következő konferenciákra:</strong>
-                                              </p>
-                                              <ul style="padding-left: 20px;">
-                                                <?php foreach ($new_conferences as $conference): ?>
-                                                <li class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568;"><?= $conference ?></li>
-                                                <?php endforeach; ?>
-                                              </ul>
-                                              <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
-                                                <tbody>
-                                                  <tr>
-                                                    <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
-                                                      &#160;
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
+                                              <?php if ($registration_type === 'speaker'): ?>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Ezúton tájékoztatjuk, hogy a Dennis Gabor Digital Horizons Week keretében megrendezésre kerülő <strong><?= htmlspecialchars($speakerConferenceName) ?></strong> konferenciára (<?= htmlspecialchars($speakerConferenceDate) ?>) benyújtott regisztrációját rögzítettük.
+                                                </p>
+                                                <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                        &#160;
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Kérjük, következő lépésben töltse fel az előadásához kapcsolódó absztraktot az alábbi linken keresztül:
+                                                  <a href="<?= htmlspecialchars($speakerAbstractUrl) ?>" style="color: #0d6efd; text-decoration: underline;"><?= htmlspecialchars($speakerAbstractUrl) ?></a>
+                                                </p>
+                                                <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                        &#160;
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Az absztrakt formai és tartalmi követelményeire vonatkozó tudnivalókat ITT
+                                                  <a href="<?= htmlspecialchars($speakerRequirementsUrl) ?>" style="color: #0d6efd; text-decoration: underline;"><?= htmlspecialchars($speakerRequirementsUrl) ?></a>
+                                                  találja.
+                                                </p>
+                                                <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                        &#160;
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Benyújtási határidő: <strong>2026. április 20.</strong>
+                                                </p>
+                                                <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                        &#160;
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Az absztraktok szakmai elbírálását követően legkésőbb 2026. április 27-ig értesítést küldünk az elfogadásról vagy elutasításról. A határidő után érkező absztraktokat sajnos nem áll módunkban elfogadni, így azok nem kerülnek bírálat alá.
+                                                </p>
+                                                <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                        &#160;
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Amennyiben technikai kérdés merül fel a feltöltés során, kérjük, jelezze a konferencia hivatalos elérhetőségén.
+                                                </p>
+                                                <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                        &#160;
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Üdvözlettel,<br>
+                                                  <strong>Szervezőbizottság<br><?= htmlspecialchars($speakerConferenceShort) ?><br>Dennis Gabor Digital Horizons Week<br>Gábor Dénes Egyetem</strong>
+                                                </p>
+                                              <?php else: ?>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Köszönjük, hogy regisztrált a Dennis Gabor Digital Horizons Week rendezvényére <strong>résztvevőként</strong>.
+                                                </p>
+                                                <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                        &#160;
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <?php if (!empty($new_conferences)): ?>
+                                                  <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                    <strong>Most regisztrált a következő konferenciákra:</strong>
+                                                  </p>
+                                                  <ul style="padding-left: 20px;">
+                                                    <?php foreach ($new_conferences as $conference): ?>
+                                                      <li class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568;"><?= $conference ?></li>
+                                                    <?php endforeach; ?>
+                                                  </ul>
+                                                  <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                          &#160;
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                <?php endif; ?>
+                                                <?php if (!empty($existing_conferences)): ?>
+                                                  <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                    <strong>Korábban már regisztrált a következő konferenciákra:</strong>
+                                                  </p>
+                                                  <ul style="padding-left: 20px;">
+                                                    <?php foreach ($existing_conferences as $conference): ?>
+                                                      <li class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568;"><?= $conference ?></li>
+                                                    <?php endforeach; ?>
+                                                  </ul>
+                                                  <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                          &#160;
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                <?php endif; ?>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Várjuk Önt szeretettel a konferencián!
+                                                </p>
+                                                <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                        &#160;
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                  Üdvözlettel,<br>
+                                                  <strong>Dennis Gabor Digital Horizons Week Csapat</strong>
+                                                </p>
                                               <?php endif; ?>
-                                              
-                                              <?php if (!empty($existing_conferences)): ?>
-                                              <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
-                                                <strong>Korábban már regisztrált a következő konferenciákra:</strong>
-                                              </p>
-                                              <ul style="padding-left: 20px;">
-                                                <?php foreach ($existing_conferences as $conference): ?>
-                                                <li class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568;"><?= $conference ?></li>
-                                                <?php endforeach; ?>
-                                              </ul>
-                                              <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
-                                                <tbody>
-                                                  <tr>
-                                                    <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
-                                                      &#160;
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                              <?php endif; ?>
-                                              
-                                              <?php if ($registration_type === 'speaker' && !empty($abstract_urls)): ?>
-                                              <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
-                                                <strong>Előadóként kérjük, töltse fel absztraktját az alábbi linken/linkeken:</strong>
-                                              </p>
-                                              <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
-                                                <tbody>
-                                                  <tr>
-                                                    <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
-                                                      &#160;
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                              <ul style="padding-left: 20px;">
-                                                <?php foreach ($abstract_urls as $key => $url): ?>
-                                                <li class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568;">
-                                                  <strong><?= strtoupper($key) ?> Konferencia:</strong> 
-                                                  <a href="<?= $url ?>" style="color: #0d6efd; text-decoration: underline;"><?= $url ?></a>
-                                                </li>
-                                                <?php endforeach; ?>
-                                              </ul>
-                                              <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
-                                                <tbody>
-                                                  <tr>
-                                                    <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
-                                                      &#160;
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                              <?php endif; ?>
-                                              
-                                              <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
-                                                Várjuk Önt szeretettel a konferencián!
-                                              </p>
                                               <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
                                                 <tbody>
                                                   <tr>
@@ -182,8 +299,9 @@
                                                 </tbody>
                                               </table>
                                               <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
-                                                Üdvözlettel,<br>
-                                                <strong>Dennis Gabor Digital Horizons Week Csapat</strong>
+                                                Ha b&#225;rmilyen k&#233;rd&#233;s vagy probl&#233;ma mer&#252;lne fel, k&#233;rj&#252;k, &#237;rjon a
+                                                <a href="mailto:test@test.hu" style="color: #0d6efd; text-decoration: underline;">test@test.hu</a>
+                                                e-mail c&#237;mre.
                                               </p>
                                             </div>
                                           </td>

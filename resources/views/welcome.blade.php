@@ -70,6 +70,14 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <iframe class="w-100 h-700 mt-5" src="https://www.youtube.com/embed/svWzNievmDg?si=9FZ3ZazrQE_6xWzl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
 <!-- Agenda Section -->
 <div class="container py-5">
     <div class="row justify-content-center">
@@ -176,9 +184,10 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="fw-bold mb-2"><?= lang('welcome__footer.quick_links') ?></div>
                         <div class="d-flex flex-column gap-2 small">
-                            <?php foreach (lang('welcome__footer.quick_order') as $linkKey): ?>
-                            <a class="text-white text-decoration-none" href="#"><?= lang('welcome__footer.links.' . $linkKey) ?></a>
-                            <?php endforeach; ?>
+                            <a class="text-white text-decoration-none"
+                                href="<?= lang('welcome__footer.links.home.url') ?>"><?= lang('welcome__footer.links.home.label') ?></a>
+                            <a class="text-white text-decoration-none"
+                                href="<?= lang('welcome__footer.links.registration.url') ?>"><?= lang('welcome__footer.links.registration.label') ?></a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
@@ -196,9 +205,10 @@
         <div class="d-flex flex-column flex-md-row justify-content-between small">
             <div><?= lang('welcome__footer.copyright') ?></div>
             <div class="d-flex gap-3">
-                <?php foreach (lang('welcome__footer.legal_order') as $linkKey): ?>
-                <a class="text-white text-decoration-none" href="#"><?= lang('welcome__footer.links.' . $linkKey) ?></a>
-                <?php endforeach; ?>
+                <a class="text-white text-decoration-none"
+                    href="<?= lang('welcome__footer.links.privacy.url') ?>"><?= lang('welcome__footer.links.privacy.label') ?></a>
+                <a class="text-white text-decoration-none"
+                    href="<?= lang('welcome__footer.links.terms.url') ?>"><?= lang('welcome__footer.links.terms.label') ?></a>
             </div>
         </div>
     </div>

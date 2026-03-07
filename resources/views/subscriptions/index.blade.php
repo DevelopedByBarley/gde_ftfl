@@ -63,6 +63,14 @@
                             placeholder="<?= lang('welcome__registration.phone') ?>">
                     </div>
 
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="is_erasmus" name="is_erasmus"
+                            value="1" <?= old('is_erasmus') ? 'checked' : '' ?>>
+                        <label class="form-check-label text-main-blue" for="is_erasmus">
+                            <?= $_COOKIE['lang'] === 'en' ? 'Arriving within the Erasmus program' : 'Erasmus keretein belül érkezik' ?>
+                        </label>
+                    </div>
+
                     <div id="speakerFields" class="mb-4 d-none">
                         <div class="mb-3">
                             <label class="form-label fw-semibold text-main-blue required" for="">
@@ -84,7 +92,7 @@
 
                     <div class="mb-3">
                         <label class="form-label fw-semibold text-main-blue required" for="attendance_type">
-                            <?= $_COOKIE['lang'] === 'en' ? 'How would you like to attend the event?' : 'Hogyan szeretne részt venni az eseményen?' ?>
+                            <?= $_COOKIE['lang'] === 'en' ? 'Mode of Presentation' : 'Előadás módja' ?>
                         </label>
                     </div>
                     <div class="btn-group btn-group-toggle d-flex gap-2 mb-4" role="group">
@@ -121,11 +129,19 @@
                             </div>
                             <div class="flex-grow-1">
                                 <div class="fw-semibold"><?= $item['title'] ?></div>
+                                <div class="small text-main-blue"><?= $item['simple_title'] ?></div>
                                 <div class="small text-main-blue"><?= $item['meta'] ?></div>
                             </div>
                             <div class="small fw-semibold text-main-blue"><?= $item['date'] ?></div>
                         </div>
                         <?php endforeach; ?>
+                    </div>
+                    <div class="alert alert-info mt-4 mb-0 text-main-blue" role="alert">
+                        <?= lang('welcome__registration.horizons_info') ?>
+                        <a class="fw-semibold text-main-blue text-decoration-underline" href="https://horizons.gde.hu"
+                            target="_blank" rel="noopener noreferrer">
+                            <?= lang('welcome__registration.horizons_link_label') ?>
+                        </a>.
                     </div>
                     <div class="form-check mt-4 text-main-blue">
                         <input class="form-check-input" type="checkbox" id="terms_agree" name="terms_agree"
