@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'privacy_policy' => 'adatkezeles_hu.pdf',
     'hero' => [
         'title' => 'FTFL',
         'subtitle' => '',
@@ -66,7 +67,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'company' => 'Cég / Egyetem',
         'phone' => 'Telefonszám',
         'select_conferences' => 'Válaszd ki, mely konferenciákon vennél részt',
-        'agree' => 'Elfogadom az ÁSZF-et',
+        'agree' => 'Elfogadom az <a href="/public/documents/adatkezeles_hu.pdf" target="_blank">Adatkezelési Szabályzatot</a>',
         'submit' => 'Küldés',
         'horizons_info' => 'Amennyiben szeretne jelentkezni további eseményeinkre is, kérjük látogasson el a',
         'horizons_link_label' => 'GDE Horizons oldalára',
@@ -82,7 +83,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
                 'simple_title' => 'Oktatás Módszertan',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
-                'date' => 'Május 21',
+                'date' => 'Május 21.',
                 'fileName' => 'ftfl.png',
             ],
         ],
@@ -198,14 +199,14 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'hero' => [
             'title' => 'FTFL2026',
             'subtitle' => 'The Future of Teaching The Future of Learning',
-            'subsubtitle' => 'International Conference on Digital Educational Methodology',
+            'subsubtitle' => 'Digitális Oktatásmódszertani Konferencia',
             'description' => 'A konferencia célja az oktatás és a tanulás területén zajló digitális és módszertani változások tudományos vizsgálata.
 A rendezvény fórumot biztosít oktatók, kutatók és gyakorlati szakemberek számára a mesterséges intelligencia és más modern technológiák oktatási alkalmazásával kapcsolatos tapasztalatok és eredmények megosztására.
 A konferencia hozzájárul az e-learning és az oktatásmódszertan területén kialakuló szakmai diskurzus megerősítéséhez.',
             'date' => '2026. Május 21.',
             'location' => 'Gábor Dénes Egyetem, Budapest',
             'language' => 'HU / EN',
-            'cta' => 'View full Summit',
+            'cta' => 'Teljes konferencia hét megtekintése',
         ],
         'topics' => [
             'title' => 'Konferencia témái többek között',

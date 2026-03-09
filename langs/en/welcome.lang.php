@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'privacy_policy' => 'privacy_policy_en.pdf',
     'hero' => [
         'title' => 'FTFL',
         'subtitle' => '',
@@ -70,7 +71,7 @@ return [
         'company' => 'Company / University',
         'phone' => 'Phone number',
         'select_conferences' => 'Select the conferences you would like to attend',
-        'agree' => 'I agree to the terms and conditions',
+        'agree' => 'I agree to the <a href="/public/documents/privacy_policy_en.pdf" target="_blank">Privacy Policy</a>',
         'submit' => 'Submit',
         'help_text' => 'If you have any questions or issues, please write to:',
         'help_email' => 'support@gde.example',
@@ -86,7 +87,7 @@ return [
                 'simple_title' => 'Teaching Methodology',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
-                'date' => 'May 21',
+                'date' => '21st May',
                 'fileName' => 'ftfl.png',
             ],
         ],
@@ -206,10 +207,10 @@ return [
               The conference aims to provide a scholarly forum for examining the digital and methodological transformations in education and learning. The event brings together educators, researchers, and practitioners to share experiences, research findings, and best practices related to the educational use of artificial intelligence and other emerging technologies.
             By fostering dialogue among experts from various fields, the conference seeks to strengthen professional discourse and contribute to the advancement of knowledge in the areas of e-learning and pedagogy.
             ',
-            'date' => '21 May 2026',
+            'date' => '21st May, 2026',
             'location' => 'Dennis Gabor University, Budapest',
             'language' => 'HU / EN',
-            'cta' => 'View full Summit',
+            'cta' => 'View full conference week ',
         ],
         'topics' => [
             'title' => 'Key Topics of the Conference',
@@ -323,6 +324,14 @@ return [
             'registration' => [
                 'label' => 'Registration',
                 'url' => '/subscription',
+            ],
+            'privacy' => [
+                'label' => 'Privacy Policy',
+                'url' => '/privacy',
+            ],
+            'terms' => [
+                'label' => 'Terms and Conditions',
+                'url' => '/terms',
             ],
         ],
         'contact_title' => 'Contact',

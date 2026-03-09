@@ -12,7 +12,7 @@ return [
       'title' => 'Absztrakt segédlet',
       'description' => 'Töltse le az absztrakt elkészítéséhez szükséges segédletet.',
       'button' => 'Segédlet letöltése',
-      'fileName' => 'absztrakt_gyik.docx',
+      'fileName' => 'absztrakt_gyik.pdf',
     ],
   ]
 ];

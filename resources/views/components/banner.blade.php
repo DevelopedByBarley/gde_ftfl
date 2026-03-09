@@ -7,8 +7,8 @@
                         <div class="d-flex align-items-center">
                             <img style="width: 250px" src="<?= public_file('images/base/gde-logo-white.png') ?> "
                                 alt="">
-                            <a href="https://gde.hu/erasmus-week-2026" target="_blank">
-                                <img style="width: 250px" src="<?= public_file('images/base/erasmus.jpeg') ?>"
+                            <a href="https://gde.hu/erasmus-week-2026" target="_blank" class="bg-white rounded">
+                                <img style="width: 200px" src="<?= public_file('images/base/erasmus_plus.png') ?>"
                                     alt="">
                             </a>
                         </div>

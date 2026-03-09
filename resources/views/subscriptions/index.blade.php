@@ -3,7 +3,7 @@
         style="background: url('<?= public_file('images/base/cover.png') ?>') center center/cover no-repeat;">
         <?= csrf() ?>
         <div class="row justify-content-center py-5">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-7">
                 <div class="bg-white rounded-4 shadow p-4 p-md-5">
                     <?= errors('conferences', session('errors')) ?>
                     <div class="text-center fw-bold h1 text-main-blue mb-4"><?= lang('welcome__registration.title') ?>
@@ -91,8 +91,8 @@
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label fw-semibold text-main-blue required" for="attendance_type">
-                            <?= $_COOKIE['lang'] === 'en' ? 'Mode of Presentation' : 'Előadás módja' ?>
+                        <label class="form-label fw-semibold text-main-blue required" for="attendance_type" id="participationLabel">
+                            <?= $_COOKIE['lang'] === 'en' ? 'How would you like to participate?' : 'Részvétel módja' ?>
                         </label>
                     </div>
                     <div class="btn-group btn-group-toggle d-flex gap-2 mb-4" role="group">
@@ -174,9 +174,11 @@
         var attendee = document.getElementById('attendeeRegistration');
         var speaker = document.getElementById('speakerRegistration');
         var speakerFields = document.getElementById('speakerFields');
+        var participationLabel = document.getElementById('participationLabel');
         var speakerInputs = speakerFields ? speakerFields.querySelectorAll('input, textarea') : [];
         var confChecks = document.querySelectorAll('.conf-check');
         var previousSelections = [];
+        var isHungarian = <?= $_COOKIE['lang'] === 'en' ? 'false' : 'true' ?>;
 
         function updateConfRequired() {
             if (!confChecks.length) return;
@@ -199,6 +201,15 @@
                     el.value = '';
                 }
             });
+            
+            // Label szöveg frissítése
+            if (participationLabel) {
+                if (isSpeaker) {
+                    participationLabel.textContent = isHungarian ? 'Előadás módja' : 'Mode of Presentation';
+                } else {
+                    participationLabel.textContent = isHungarian ? 'Részvétel módja' : 'How would you like to participate?';
+                }
+            }
         }
 
         // Checkbox kezelés

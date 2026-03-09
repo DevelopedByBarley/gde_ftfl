@@ -60,6 +60,8 @@ class Subscriber extends Model
         'Phone' => $subscriber->phone ?? '',
         'Conferences' => $subscriber->conferences ?? '',
         'Registration_Type' => $subscriber->registration_type ?? '',
+        'Participation_Type' => $subscriber->participation_type ?? '',
+        'Is_Erasmus' => (int)$subscriber->is_erasmus === 1 ? 'Yes' : 'No',
         'Created At' => $subscriber->created_at ?? '',
       ];
     }, $subscribers);

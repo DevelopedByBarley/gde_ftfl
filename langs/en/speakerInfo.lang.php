@@ -12,7 +12,7 @@ return [
       'title' => 'Abstract Guide',
       'description' => 'Download the guide for preparing your abstract.',
       'button' => 'Download Guide',
-      'fileName' => 'abstract_guide.docx',
+      'fileName' => 'abstract_guide.pdf',
     ],
   ]
 ];
