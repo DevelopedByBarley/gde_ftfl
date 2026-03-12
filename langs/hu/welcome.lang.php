@@ -79,7 +79,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'registration_type' => 'Válassza ki hogy milyen módon szeretne részt venni a konferencián',
         'conf_items' => [
             [
-                'title' => 'The Future of Teaching The Future of Learning',
+                'title' => 'The Future of Teaching <br> The Future of Learning',
                 'simple_title' => 'Oktatás Módszertan',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
@@ -113,7 +113,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
                 'fileName' => 'drone.png',
             ],
             [
-                'title' => 'The Future of Teaching The Future of Learning',
+                'title' => 'The Future of Teaching <br> The Future of Learning',
                 'simple_title' => 'Oktatás Módszertan',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
@@ -198,8 +198,8 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
     'landing' => [
         'hero' => [
             'title' => 'FTFL2026',
-            'subtitle' => 'The Future of Teaching The Future of Learning',
-            'subsubtitle' => 'Digitális Oktatásmódszertani Konferencia',
+            'subtitle' => 'The Future of Teaching <br> The Future of Learning',
+            'subsubtitle' => 'International Conference on Digital Educational Methodology',
             'description' => 'A konferencia célja az oktatás és a tanulás területén zajló digitális és módszertani változások tudományos vizsgálata.
 A rendezvény fórumot biztosít oktatók, kutatók és gyakorlati szakemberek számára a mesterséges intelligencia és más modern technológiák oktatási alkalmazásával kapcsolatos tapasztalatok és eredmények megosztására.
 A konferencia hozzájárul az e-learning és az oktatásmódszertan területén kialakuló szakmai diskurzus megerősítéséhez.',

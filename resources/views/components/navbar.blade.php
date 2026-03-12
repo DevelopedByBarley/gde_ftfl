@@ -1,24 +1,28 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12 my-5">
-            <div class="d-flex justify-content-center mt-4">
-                <ul class="nav nav-pills bg-main-blue text-white rounded-pill p-1 shadow-sm">
-                    <li class="nav-item">
-                        <a class="nav-link rounded-pill px-4 <?= isUrl('/') ? 'bg-secondary text-white' : 'text-white' ?>" href="/">
-                            <?= lang('navbar__links.home') ?>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link rounded-pill px-4 <?= isUrl('/subscription') ? 'bg-secondary text-white' : 'text-white' ?>" href="/subscription">
-                            <?= lang('navbar__links.registration') ?>
-                        </a>
-                    </li>
-                </ul>
+<div class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <div class="d-flex justify-content-center mt-4">
+                    <ul class="nav nav-pills bg-main-blue text-white rounded-pill p-1 shadow-sm">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill px-4 <?= isUrl('/') ? 'bg-secondary text-white' : 'text-white' ?>"
+                                href="/">
+                                <?= lang('navbar__links.home') ?>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill px-4 <?= isUrl('/subscription') ? 'bg-secondary text-white' : 'text-white' ?>"
+                                href="/subscription">
+                                <?= lang('navbar__links.registration') ?>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+</div>
 
 <!--
 <nav class="navbar navbar-expand-lg border-bottom fixed-top pr-font bg-light dark-bg-slate-800">

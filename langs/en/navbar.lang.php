@@ -6,12 +6,12 @@ return [
   ],
   'topics' => [
     [
-      'label' => 'AI',
-      'url' => '#ai',
+      'label' => 'FTFL2025',
+      'url' => '#ftfl',
     ],
     [
-      'label' => 'FTFL',
-      'url' => '#ftfl',
+      'label' => 'AI',
+      'url' => '#ai',
     ],
     [
       'label' => 'Drone technology',

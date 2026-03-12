@@ -17,7 +17,7 @@ $dotenv->safeLoad();
 
 define('EVENT_TYPE', $_ENV['EVENT_TYPE']);
 define('ABSTRACT_TYPE', $_ENV['ABSTRACT_TYPE']);
-define('EVENT_STARTED', $_ENV['EVENT_STARTED']);
+define('EVENT_STARTED', filter_var($_ENV['EVENT_STARTED'], FILTER_VALIDATE_BOOLEAN));
 
 Session::create();
 

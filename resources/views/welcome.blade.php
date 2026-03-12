@@ -1,5 +1,5 @@
 <!-- Hero Section -->
-<div class="text-dark my-5" style="display: flex; align-items: center;">
+<div class="text-dark mb-5 py-5 bg-light" style="display: flex; align-items: center;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
@@ -13,6 +13,9 @@
                     <h5 class="h4 text-muted fw-semibold mb-4 text-secondary">
                         <?= lang('welcome__landing.hero.subsubtitle') ?>
                     </h5>
+
+                    <hr class="bg-main-blue w-25 mx-auto" style="height: 3px; opacity: 1;">
+
 
                     <p class="h5 fw-normal mb-4" style="line-height: 1.6;">
                         <?= lang('welcome__landing.hero.description') ?>
@@ -37,6 +40,50 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div id="welcomeMediaCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <?php foreach (public_gallery_images('images/base/gallery') as $index => $_): ?>
+                    <button type="button" data-bs-target="#welcomeMediaCarousel" data-bs-slide-to="<?= $index ?>"
+                        class="<?= $index === 0 ? 'active' : '' ?>" <?= $index === 0 ? 'aria-current="true"' : '' ?>
+                        aria-label="Slide <?= $index + 1 ?>"></button>
+                    <?php endforeach; ?>
+                </div>
+
+                <div class="carousel-inner rounded-3 overflow-hidden shadow-sm">
+                    <?php foreach (public_gallery_images('images/base/gallery') as $index => $imagePath): ?>
+                    <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                        <img src="<?= public_file($imagePath) ?>" class="d-block w-100"
+                            style="height: 500px; object-fit: cover;" alt="Conference visual <?= $index + 1 ?>">
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#welcomeMediaCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#welcomeMediaCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <iframe class="w-100 h-500 mt-5" height="315"
+                src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Key Topics Section -->
 <!-- Key Topics Section -->
 <div class="container py-6">
     <div class="row d-flex justify-content-center align-items-center">
@@ -60,33 +107,32 @@
     </div>
 </div>
 
+
+
+
 <!-- Who Should Attend Section -->
-<div class="gradient-bg-horizontal py-6 text-white">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <h2 class="h3 fw-bold mb-4"><?= lang('welcome__landing.audience.title') ?></h2>
-                <p class="lead">
-                    <?= lang('welcome__landing.audience.description') ?>
-                </p>
+<div class="mb-6">
+    <div class="wrapper h-100 w-100 d-flex align-items-center justify-content-center py-5 text-white"
+        style="background: url('<?= public_file('images/base/banner_2.png') ?>') center center/cover no-repeat;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-12 col-lg-4">
+                    <img src="<?= public_file('images/base/kep_01.jpg') ?>" alt="Audience section image"
+                        class="img-fluid rounded-3 shadow-sm w-100 rounded">
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h2 class="h3 fw-bold mb-4"><?= lang('welcome__landing.audience.title') ?></h2>
+                    <p class="lead mb-0">
+                        <?= lang('welcome__landing.audience.description') ?>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <iframe class="w-100 h-700 mt-5" src="https://www.youtube.com/embed/svWzNievmDg?si=9FZ3ZazrQE_6xWzl"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-
 <!-- Agenda Section -->
-<div class="container py-5">
+<?php if (EVENT_STARTED): ?>
+<div class="container mt-5 mb-5">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
             <div class="accordion" id="agendaAccordion">
@@ -101,7 +147,6 @@
                     <div id="agendaCollapse" class="accordion-collapse collapse" aria-labelledby="agendaHeading"
                         data-bs-parent="#agendaAccordion">
                         <div class="accordion-body">
-                            <?php if (EVENT_STARTED): ?>
                             <div class="timeline">
                                 <?php foreach (lang('welcome__landing.agenda.items') as $index => $item): ?>
                                 <div
@@ -117,11 +162,6 @@
                                 </div>
                                 <?php endforeach; ?>
                             </div>
-                            <?php else: ?>
-                            <div class="text-center py-4">
-                                <p class="text-muted mb-0">Hamarosan</p>
-                            </div>
-                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -129,9 +169,11 @@
         </div>
     </div>
 </div>
+<?php endif; ?>
 
 <!-- Speakers Section -->
-<div class="bg-light py-5">
+<?php if (EVENT_STARTED): ?>
+<div class="">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
@@ -144,10 +186,9 @@
                                 <?= lang('welcome__landing.speakers.title') ?>
                             </button>
                         </h2>
-                        <div id="speakersCollapse" class="accordion-collapse collapse" aria-labelledby="speakersHeading"
-                            data-bs-parent="#speakersAccordion">
+                        <div id="speakersCollapse" class="accordion-collapse collapse"
+                            aria-labelledby="speakersHeading" data-bs-parent="#speakersAccordion">
                             <div class="accordion-body">
-                                <?php if (EVENT_STARTED): ?>
                                 <div class="row g-4">
                                     <?php foreach (lang('welcome__landing.speakers.items') as $speaker): ?>
                                     <div class="col-12 col-md-6 col-lg-4">
@@ -166,11 +207,6 @@
                                     </div>
                                     <?php endforeach; ?>
                                 </div>
-                                <?php else: ?>
-                                <div class="text-center py-4">
-                                    <p class="text-muted mb-0">Hamarosan</p>
-                                </div>
-                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
@@ -179,6 +215,7 @@
         </div>
     </div>
 </div>
+<?php endif; ?>
 
 <!-- FAQ Section -->
 <div class="container">
@@ -209,9 +246,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="fw-bold mb-2"><?= lang('welcome__footer.contact_title') ?></div>
                         <div class="small">
-                            <div><?= lang('welcome__footer.contact_city') ?></div>
                             <div><?= lang('welcome__footer.contact_email') ?></div>
-                            <div><?= lang('welcome__footer.contact_phone') ?></div>
                         </div>
                     </div>
                 </div>
@@ -229,7 +264,6 @@
         </div>
     </div>
 </footer>
-
 <script>
     const parallaxHero = document.getElementById('parallaxHero');
 

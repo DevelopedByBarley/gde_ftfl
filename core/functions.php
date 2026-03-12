@@ -434,6 +434,36 @@ function public_file($path)
   return "/public/{$path}";
 }
 
+function public_gallery_images(string $relativeDir = 'images/base/gallery'): array
+{
+  static $cache = [];
+
+  $cacheKey = trim($relativeDir, '/');
+  if (isset($cache[$cacheKey])) {
+    return $cache[$cacheKey];
+  }
+
+  $galleryDir = base_path('public/' . $cacheKey);
+  if (!is_dir($galleryDir)) {
+    return $cache[$cacheKey] = [];
+  }
+
+  $files = [];
+  foreach (['jpg', 'jpeg', 'png', 'webp', 'gif', 'avif', 'JPG', 'JPEG', 'PNG', 'WEBP', 'GIF', 'AVIF'] as $ext) {
+    $matches = glob($galleryDir . '/*.' . $ext);
+    if ($matches !== false) {
+      $files = array_merge($files, $matches);
+    }
+  }
+
+  sort($files, SORT_NATURAL | SORT_FLAG_CASE);
+
+  return $cache[$cacheKey] = array_map(
+    static fn($path) => $cacheKey . '/' . basename($path),
+    $files
+  );
+}
+
 function arr_to_obj($arr)
 {
   return json_decode(json_encode($arr));

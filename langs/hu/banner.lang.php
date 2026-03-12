@@ -1,7 +1,7 @@
 <?php
 return [
   'university' => 'Gábor Dénes Egyetem',
-  'title' => 'The Future of Teaching The Future of Learning',
+  'title' => 'The Future of Teaching <br> The Future of Learning',
   'date_range' => 'Május 21.',
   'city' => 'Gábor Dénes Egyetem, Budapest',
   'year' => '2026',

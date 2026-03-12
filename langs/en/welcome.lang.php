@@ -71,7 +71,7 @@ return [
         'company' => 'Company / University',
         'phone' => 'Phone number',
         'select_conferences' => 'Select the conferences you would like to attend',
-        'agree' => 'I agree to the <a href="/public/documents/privacy_policy_en.pdf" target="_blank">Privacy Policy</a>',
+        'agree' => 'I agree to the <a href="/public/documents/adatkezeles_en.pdf" target="_blank">Privacy Policy</a>',
         'submit' => 'Submit',
         'help_text' => 'If you have any questions or issues, please write to:',
         'help_email' => 'support@gde.example',
@@ -83,7 +83,7 @@ return [
         'registration_type' => 'Select how you would like to participate in the conference',
         'conf_items' => [
             [
-                'title' => 'The Future of Teaching The Future of Learning',
+                'title' => 'The Future of Teaching <br> The Future of Learning',
                 'simple_title' => 'Teaching Methodology',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
@@ -117,7 +117,7 @@ return [
                 'fileName' => 'drone.png',
             ],
             [
-                'title' => 'The Future of Teaching The Future of Learning',
+                'title' => 'The Future of Teaching <br> The Future of Learning',
                 'simple_title' => 'Teaching Methodology',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
@@ -201,7 +201,7 @@ return [
     'landing' => [
         'hero' => [
             'title' => 'FTFL2026',
-            'subtitle' => 'The Future of Teaching The Future of Learning',
+            'subtitle' => 'The Future of Teaching <br> The Future of Learning',
             'subsubtitle' => 'International Conference on Digital Educational Methodology',
             'description' => '
               The conference aims to provide a scholarly forum for examining the digital and methodological transformations in education and learning. The event brings together educators, researchers, and practitioners to share experiences, research findings, and best practices related to the educational use of artificial intelligence and other emerging technologies.
