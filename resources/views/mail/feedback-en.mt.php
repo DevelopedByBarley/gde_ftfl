@@ -382,7 +382,7 @@ $speakerRequirementsUrl = $speakerAbstractUrl;
                                               </table>
                                               <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
                                                 If you have any questions or run into any issues, please write to
-                                                <a href="mailto:test@test.hu" style="color: #0d6efd; text-decoration: underline;">test@test.hu</a>.
+                                                <a href="mailto:horizons@gde.hu" style="color: #0d6efd; text-decoration: underline;">horizons@gde.hu</a>.
                                               </p>
                                             </div>
                                           </td>

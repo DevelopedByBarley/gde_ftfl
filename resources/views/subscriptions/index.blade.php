@@ -157,8 +157,8 @@
                     <div class="text-center mt-3 small text-main-blue">
                         <div>
                             <?= lang('welcome__registration.help_text') ?>
-                            <a class="text-main-blue text-decoration-underline" href="mailto:test@test.hu">
-                                test@test.hu
+                            <a class="text-main-blue text-decoration-underline" href="mailto:horizons@gde.hu">
+                                horizons@gde.hu
                             </a>
                         </div>
                     </div>

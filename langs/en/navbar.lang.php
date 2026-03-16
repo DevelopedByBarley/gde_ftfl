@@ -6,7 +6,7 @@ return [
   ],
   'topics' => [
     [
-      'label' => 'FTFL2025',
+      'label' => 'FTFL 2025',
       'url' => '#ftfl',
     ],
     [

@@ -196,6 +196,17 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         ],
     ],
     'landing' => [
+        'alert' => [
+            'title' => 'Felhívás előadóknak és szakmai résztvevőknek',
+            'body' => 'Az FTFL2026 konferencia a Dennis Gabor Digital Horizons Week keretében kerül megrendezésre, és fórumot biztosít az oktatás és a tanulás digitális átalakulásával kapcsolatos kutatási eredmények és gyakorlati tapasztalatok bemutatására. A konferencián személyes és online formában is részt lehet venni, valamint előadást tartani. Várjuk előadók, kiállítók és szakmai érdeklődők jelentkezését! A konferencián lehetőség nyílik az alábbi munkák bemutatására széles körű szakmai közönség előtt:',
+            'list' => [
+                'Tudományos publikációk és kutatási eredmények',
+                'Esettanulmányok és gyakorlati alkalmazások',
+                'Folyamatban lévő kutatási projektek',
+                'Doktori kutatások és disszertációs témák',
+                'Poszterbemutatók',
+            ],
+        ],
         'hero' => [
             'title' => 'FTFL2026',
             'subtitle' => 'The Future of Teaching <br> The Future of Learning',
@@ -309,6 +320,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
                 ],
             ],
         ],
+        'youtube_label' => 'Ilyen volt az FTFL2025 konferencia:',
     ],
     'footer' => [
         'about_title' => 'Gábor Dénes Egyetem',

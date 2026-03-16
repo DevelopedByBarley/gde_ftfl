@@ -300,7 +300,7 @@ $speakerRequirementsUrl = $speakerAbstractUrl;
                                               </table>
                                               <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
                                                 Ha b&#225;rmilyen k&#233;rd&#233;s vagy probl&#233;ma mer&#252;lne fel, k&#233;rj&#252;k, &#237;rjon a
-                                                <a href="mailto:test@test.hu" style="color: #0d6efd; text-decoration: underline;">test@test.hu</a>
+                                                <a href="mailto:horizons@gde.hu" style="color: #0d6efd; text-decoration: underline;">horizons@gde.hu</a>
                                                 e-mail c&#237;mre.
                                               </p>
                                             </div>

@@ -199,6 +199,17 @@ return [
         ],
     ],
     'landing' => [
+        'alert' => [
+            'title' => 'Call for Speakers and Professional Participants',
+            'body' => 'The FTFL2026 conference will be held as part of the Dennis Gabor Digital Horizons Week, providing a forum for presenting research results and practical experiences related to the digital transformation of education and learning. Participation and presentations are possible both in person and online. We welcome applications from speakers, exhibitors, and professional attendees! The conference offers the opportunity to present the following works to a broad professional audience:',
+            'list' => [
+                'Scientific publications and research results',
+                'Case studies and practical applications',
+                'Ongoing research projects',
+                'Doctoral research and dissertation topics',
+                'Poster presentations',
+            ],
+        ],
         'hero' => [
             'title' => 'FTFL2026',
             'subtitle' => 'The Future of Teaching <br> The Future of Learning',
@@ -314,6 +325,7 @@ return [
                 ],
             ],
         ],
+        'youtube_label' => 'This is what the FTFL2025 conference was like:',
     ],
     'footer' => [
         'about_title' => 'Gabor Denes University',

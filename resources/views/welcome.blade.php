@@ -17,10 +17,17 @@
                     <hr class="bg-main-blue w-25 mx-auto" style="height: 3px; opacity: 1;">
 
 
-                    <p class="h5 fw-normal mb-4" style="line-height: 1.6;">
-                        <?= lang('welcome__landing.hero.description') ?>
-                    </p>
-                    <div class="small mb-4">
+                    <div class="row">
+                        <div class="col-12 col-xl-6 bg-red-500">
+                            <img src="<?= public_file('images/flyer.jpg') ?>" alt="">
+                        </div>
+                        <div class="col-12 col-xl-6 p-lg-4">
+                            <p class="h5 fw-normal mb-4" style="line-height: 1.6;">
+                                <?= lang('welcome__landing.hero.description') ?>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="small mb-4 mt-3">
                         <span class="me-3 text-main-blue"><i class="bi bi-calendar"></i>
                             <?= lang('welcome__landing.hero.date') ?></span>
                         <span class="me-3 text-main-blue"><i class="bi bi-geo-alt"></i>
@@ -42,6 +49,19 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-lg-6 d-flex align-items-center">
+            <div class="text-center px-4 py-5">
+                <h3 class="fw-bold mb-4"><?= lang('welcome__landing.alert.title') ?></h3>
+                <p class="text-muted mb-4"><?= lang('welcome__landing.alert.body') ?></p>
+                <ul class="list-unstyled">
+                    <?php foreach (lang('welcome__landing.alert.list') as $item): ?>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i><?= $item ?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
         <div class="col-lg-6">
             <div id="welcomeMediaCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -74,14 +94,12 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <iframe class="w-100 h-500 mt-5" height="315"
-                src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </div>
     </div>
 </div>
+
+
 
 <!-- Key Topics Section -->
 <section class="py-6">
@@ -176,17 +194,14 @@
     </div>
 </section>
 
-
-
-
 <!-- Who Should Attend Section -->
-<div class="mb-6">
+<div class="my-6">
     <div class="wrapper h-100 w-100 d-flex align-items-center justify-content-center py-5 text-white"
         style="background: url('<?= public_file('images/base/banner_2.png') ?>') center center/cover no-repeat;">
         <div class="container">
             <div class="row justify-content-center align-items-center g-4">
                 <div class="col-12 col-lg-4">
-                    <img src="<?= public_file('images/base/kep_01.jpg') ?>" alt="Audience section image"
+                    <img src="<?= public_file('images/base/robot.jpg') ?>" alt="Audience section image"
                         class="img-fluid rounded-3 shadow-sm w-100 rounded">
                 </div>
                 <div class="col-12 col-lg-8">
@@ -288,7 +303,21 @@
 
 <!-- FAQ Section -->
 <div class="container">
-    <?php include base_path('resources/views/components/faq.blade.php'); ?>
+    <div class="row">
+        <div class="col-12 col-xl-6">
+            <p class="fw-semibold text-main-blue mt-5 mb-2"><?= lang('welcome__landing.youtube_label') ?></p>
+            <iframe class="w-100 h-500" height="315"
+                src="https://www.youtube.com/embed/svWzNievmDg?si=BChPRrfk0fNdwFgk" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-12 col-xl-6">
+            <?php include base_path('resources/views/components/faq.blade.php'); ?>
+        </div>
+    </div>
+
 </div>
 
 <footer class="gradient-bg-horizontal text-white mt-5">
@@ -333,6 +362,7 @@
         </div>
     </div>
 </footer>
+
 <script>
     const parallaxHero = document.getElementById('parallaxHero');
 
@@ -348,3 +378,5 @@
         parallaxHero.style.transform = `translateY(${offset}px)`;
     });
 </script>
+
+
