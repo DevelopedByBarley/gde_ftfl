@@ -73,7 +73,7 @@
         <ul class="dropdown-menu dropdown-menu-end shadow-sm">
             <?php foreach ($previousConferenceTopics as $topic): ?>
             <li>
-                <a class="dropdown-item" href="<?= $topic['url'] . "2025/" ?>" target="_blank"
+                <a class="dropdown-item" href="https://ftfl.gde.hu/2025/" target="_blank"
                     rel="noopener noreferrer"><?= $topic['label'] ?></a>
             </li>
             <?php endforeach; ?>

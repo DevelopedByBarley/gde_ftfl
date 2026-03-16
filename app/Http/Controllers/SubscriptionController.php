@@ -12,9 +12,9 @@ class SubscriptionController extends Controller
 
   private Subscriber $subscriber;
   const ABSTRACT_UPLOAD_URLS = [
-    'ai' => 'https://aikonferencia.gde.hu/absztrakt',
+    'ai' => 'https://fifi.gde.hu/absztrakt',
     'ftfl' => 'https://ftfl.gde.hu/absztrakt',
-    'drone' => 'https://dronkonferencia.gde.hu/absztrakt',
+    'drone' => 'https://fdfv.gde.hu/absztrakt',
     'fsft' => 'https://informaciobiztonsag.gde.hu/absztrakt',
   ];
   private $short_map = [

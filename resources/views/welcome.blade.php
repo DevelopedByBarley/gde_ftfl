@@ -84,28 +84,97 @@
 </div>
 
 <!-- Key Topics Section -->
-<!-- Key Topics Section -->
-<div class="container py-6">
-    <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-lg-10">
-            <h2 class="text-center h3 fw-bold mb-5 text-main-blue"><?= lang('welcome__landing.topics.title') ?></h2>
-            <div class="row g-4">
-                <?php foreach (lang('welcome__landing.topics.items') as $topic): ?>
-                <div class="col-12 col-md-6 text-center">
-                    <div class="d-flex gap-3align-items-center justify-content-center flex-column p-4 rounded">
-                        <div>
-                            <i class="bi <?= $topic['icon'] ?> text-main-blue" style="font-size: 3rem;"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold text-main-blue mb-2"><?= $topic['title'] ?></h5>
-                        </div>
+<section class="py-6">
+    <div class="container">
+        <h2 class="text-center h3 fw-bold mb-5 text-main-blue"><?= lang('welcome__landing.topics.title') ?></h2>
+        <p class="text-center"><?= lang('welcome__landing.invitation.desc') ?></p>
+
+        <div class="row g-4 d-lg-none">
+            <?php foreach (lang('welcome__landing.topics.items') as $topic): ?>
+            <div class="col-12 col-md-6 text-center">
+                <div class="d-flex align-items-center justify-content-center flex-column p-4 rounded">
+                    <div class="mb-2">
+                        <img src="<?= public_file('images/base/ftfl/' . $topic['fileName']) ?>" class="img-fluid w-50"
+                            alt="<?= $topic['title'] ?>">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold text-main-blue mb-2"><?= $topic['title'] ?></h5>
                     </div>
                 </div>
-                <?php endforeach; ?>
+            </div>
+            <?php endforeach; ?>
+        </div>
+
+        <?php $topics = lang('welcome__landing.topics.items'); ?>
+        <div class="d-none d-lg-block">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-4 text-center">
+                    <?php if (isset($topics[0])): ?>
+                    <div class="mb-5">
+                        <img src="<?= public_file('images/base/ftfl/' . $topics[0]['fileName']) ?>"
+                            class="img-fluid w-50" alt="<?= $topics[0]['title'] ?>">
+                        <div class="fw-semibold text-main-blue mt-2"><?= $topics[0]['title'] ?></div>
+                    </div>
+                    <?php endif; ?>
+                    <?php if (isset($topics[1])): ?>
+                    <div>
+                        <img src="<?= public_file('images/base/ftfl/' . $topics[1]['fileName']) ?>"
+                            class="img-fluid w-50" alt="<?= $topics[1]['title'] ?>">
+                        <div class="fw-semibold text-main-blue mt-2"><?= $topics[1]['title'] ?></div>
+                    </div>
+                    <?php endif; ?>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <img src="<?= public_file('images/base/ftfl/oldal_ikon.svg') ?>" class="img-fluid w-100"
+                        alt="Kalap">
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <?php if (isset($topics[2])): ?>
+                    <div class="mb-5">
+                        <img src="<?= public_file('images/base/ftfl/' . $topics[2]['fileName']) ?>"
+                            class="img-fluid w-50" alt="<?= $topics[2]['title'] ?>">
+                        <div class="fw-semibold text-main-blue mt-2"><?= $topics[2]['title'] ?></div>
+                    </div>
+                    <?php endif; ?>
+                    <?php if (isset($topics[3])): ?>
+                    <div>
+                        <img src="<?= public_file('images/base/ftfl/' . $topics[3]['fileName']) ?>"
+                            class="img-fluid w-50" alt="<?= $topics[3]['title'] ?>">
+                        <div class="fw-semibold text-main-blue mt-2"><?= $topics[3]['title'] ?></div>
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-0">
+                <div class="col-lg-4 text-center">
+                    <?php if (isset($topics[4])): ?>
+                    <div>
+                        <img src="<?= public_file('images/base/ftfl/' . $topics[4]['fileName']) ?>"
+                            class="img-fluid w-50" alt="<?= $topics[4]['title'] ?>">
+                        <div class="fw-semibold text-main-blue mt-2"><?= $topics[4]['title'] ?></div>
+                    </div>
+                    <?php endif; ?>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <?php if (isset($topics[5])): ?>
+                    <div>
+                        <img src="<?= public_file('images/base/ftfl/' . $topics[5]['fileName']) ?>"
+                            class="img-fluid w-50" alt="<?= $topics[5]['title'] ?>">
+                        <div class="fw-semibold text-main-blue mt-2"><?= $topics[5]['title'] ?></div>
+                    </div>
+                    <?php endif; ?>
+                </div>
+                <div class="col-12 text-center mt-6">
+                    <a href="/subscription"
+                        class="btn btn-lg bg-main-blue text-white rounded-pill"><?= lang('navbar__links.registration') ?></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 
 

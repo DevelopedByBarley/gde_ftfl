@@ -212,31 +212,34 @@ return [
             'language' => 'HU / EN',
             'cta' => 'View full conference week ',
         ],
+        'invitation' => [
+            'desc' => 'We invite speakers and professional participants to our conference. The event can be attended and presented at in person in Budapest or online in the following topics:'
+        ],
         'topics' => [
             'title' => 'Key Topics of the Conference',
             'items' => [
                 [
-                    'icon' => 'bi-book',
+                    'fileName' => '01_modszertan.png',
                     'title' => 'Digital curriculum development and e-learning systems',
                 ],
                 [
-                    'icon' => 'bi-cpu',
+                    'fileName' => '02_modszertan.png',
                     'title' => 'Artificial intelligence in education',
                 ],
                 [
-                    'icon' => 'bi-laptop',
+                    'fileName' => '03_modszertan.png',
                     'title' => 'Educational technology tools and platform development',
                 ],
                 [
-                    'icon' => 'bi-people',
+                    'fileName' => '04_modszertan.png',
                     'title' => 'Transformation of learning environments and student competencies',
                 ],
                 [
-                    'icon' => 'bi-journal-text',
+                    'fileName' => '05_modszertan.png',
                     'title' => 'Changes in teaching roles and pedagogical models',
                 ],
                 [
-                    'icon' => 'bi-building',
+                    'fileName' => '06_modszertan.png',
                     'title' => 'Best practices and institutional implementation',
                 ],
             ],
@@ -336,7 +339,7 @@ return [
         ],
         'contact_title' => 'Contact',
         'contact_city' => 'Budapest, HU',
-        'contact_email' => 'info@gde.hu',
+        'contact_email' => 'horizons@gde.hu',
         'contact_phone' => '+36 1 234 5678',
         'newsletter_title' => 'Newsletter',
         'newsletter_text' => 'Get updates about conference news.',

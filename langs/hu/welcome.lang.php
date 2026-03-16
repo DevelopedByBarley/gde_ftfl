@@ -12,7 +12,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
     'topics' => [
         [
             'title' => 'Digitális tananyagfejlesztés és e-learning rendszerek',
-            'fileName' => 'secure_1.png',
+            'fileName' => '01_modszertan.png',
         ],
         [
             'title' => 'Mesterséges intelligencia az oktatásban',
@@ -80,7 +80,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'conf_items' => [
             [
                 'title' => 'The Future of Teaching <br> The Future of Learning',
-                'simple_title' => 'Oktatás Módszertan',
+                'simple_title' => 'International Conference on Digital Educational Methodology',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
                 'date' => 'Május 21.',
@@ -114,7 +114,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
             ],
             [
                 'title' => 'The Future of Teaching <br> The Future of Learning',
-                'simple_title' => 'Oktatás Módszertan',
+                'simple_title' => 'International Conference on Digital Educational Methodology',
                 'value' => 'ftfl',
                 'meta' => 'FTFL2026',
                 'date' => 'Május 21',
@@ -208,37 +208,40 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
             'language' => 'HU / EN',
             'cta' => 'Teljes konferencia hét megtekintése',
         ],
+        'invitation' => [
+            'desc' => 'Konferenciánkra várjuk előadók és szakmai résztvevők jelentkezését. A rendezvényen személyesen Budapesten vagy online formában is lehet részt venni és előadást tartani az alábbi témakörökben:'
+        ],
         'topics' => [
             'title' => 'Konferencia témái többek között',
             'items' => [
                 [
-                    'icon' => 'bi-book',
+                    'fileName' => '01_modszertan.png',
                     'title' => 'Digitális tananyagfejlesztés és e-learning rendszerek',
                 ],
                 [
-                    'icon' => 'bi-cpu',
+                    'fileName' => '02_modszertan.png',
                     'title' => 'Mesterséges intelligencia az oktatásban',
                 ],
                 [
-                    'icon' => 'bi-laptop',
+                    'fileName' => '03_modszertan.png',
                     'title' => 'Oktatástechnológiai eszközök és platformfejlesztés',
                 ],
                 [
-                    'icon' => 'bi-people',
+                    'fileName' => '04_modszertan.png',
                     'title' => 'Tanulási környezetek és hallgatói kompetenciák átalakulása',
                 ],
                 [
-                    'icon' => 'bi-journal-text',
+                    'fileName' => '05_modszertan.png',
                     'title' => 'Az oktatói szerepek és pedagógiai modellek változása',
                 ],
                 [
-                    'icon' => 'bi-building',
+                    'fileName' => '06_modszertan.png',
                     'title' => 'Jó gyakorlatok és intézményi implementáció',
                 ],
             ],
         ],
         'audience' => [
-            'title' => 'Kinek szól a konferencia?',
+            'title' => 'Kiket várunk a konferenciára?',
             'description' => 'A konferencia az oktatás és a tanulás digitális és módszertani megújulásában érintett szakmai szereplőket kívánja megszólítani. Várjuk egyetemi oktatók, pedagógusok, oktatáskutatók, PhD-hallgatók és oktatástechnológiai fejlesztők részvételét, valamint az intézményi és vállalati képzési területen dolgozó szakembereket.
              A rendezvény interdiszciplináris szakmai párbeszédet támogat az akadémiai és gyakorlati tapasztalatok mentén.',
         ],
@@ -331,7 +334,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         ],
         'contact_title' => 'Kapcsolat',
         'contact_city' => 'Budapest, HU',
-        'contact_email' => 'info@gde.hu',
+        'contact_email' => 'horizons@gde.hu',
         'contact_phone' => '+36 1 234 5678',
         'newsletter_title' => 'Hírlevél',
         'newsletter_text' => 'Értesülj a konferencia híreiről.',
