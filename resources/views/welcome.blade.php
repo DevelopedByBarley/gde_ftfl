@@ -214,92 +214,7 @@
         </div>
     </div>
 </div>
-<!-- Agenda Section -->
-<?php if (EVENT_STARTED): ?>
-<div class="container mt-5 mb-5">
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
-            <div class="accordion" id="agendaAccordion">
-                <div class="accordion-item border-0 shadow-sm mb-3">
-                    <h2 class="accordion-header" id="agendaHeading">
-                        <button class="accordion-button collapsed fw-bold text-main-blue text-3xl" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#agendaCollapse" aria-expanded="false"
-                            aria-controls="agendaCollapse">
-                            <?= lang('welcome__landing.agenda.title') ?>
-                        </button>
-                    </h2>
-                    <div id="agendaCollapse" class="accordion-collapse collapse" aria-labelledby="agendaHeading"
-                        data-bs-parent="#agendaAccordion">
-                        <div class="accordion-body">
-                            <div class="timeline">
-                                <?php foreach (lang('welcome__landing.agenda.items') as $index => $item): ?>
-                                <div
-                                    class="d-flex gap-4 <?= $index < count(lang('welcome__landing.agenda.items')) - 1 ? 'mb-5' : '' ?>">
-                                    <div style="min-width: 120px;">
-                                        <div class="fw-bold text-main-blue"><?= $item['date'] ?></div>
-                                        <div class="small text-secondary"><?= $item['time'] ?></div>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold mb-2"><?= $item['title'] ?></h5>
-                                        <p class="text-secondary small mb-0"><?= $item['description'] ?></p>
-                                    </div>
-                                </div>
-                                <?php endforeach; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
 
-<!-- Speakers Section -->
-<?php if (EVENT_STARTED): ?>
-<div class="">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="accordion" id="speakersAccordion">
-                    <div class="accordion-item border-0 shadow-sm">
-                        <h2 class="accordion-header" id="speakersHeading">
-                            <button class="accordion-button collapsed fw-bold text-main-blue text-3xl" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#speakersCollapse" aria-expanded="false"
-                                aria-controls="speakersCollapse">
-                                <?= lang('welcome__landing.speakers.title') ?>
-                            </button>
-                        </h2>
-                        <div id="speakersCollapse" class="accordion-collapse collapse"
-                            aria-labelledby="speakersHeading" data-bs-parent="#speakersAccordion">
-                            <div class="accordion-body">
-                                <div class="row g-4">
-                                    <?php foreach (lang('welcome__landing.speakers.items') as $speaker): ?>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card h-100 border-0 shadow-sm">
-                                            <div class="bg-main-blue"
-                                                style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                                                <i class="bi bi-person-circle" style="font-size: 4rem;"></i>
-                                            </div>
-                                            <div class="card-body text-center p-4">
-                                                <h5 class="fw-bold mb-1"><?= $speaker['name'] ?></h5>
-                                                <div class="text-main-blue small fw-semibold mb-3">
-                                                    <?= $speaker['role'] ?></div>
-                                                <p class="small text-secondary mb-3"><?= $speaker['bio'] ?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <?php endforeach; ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
 
 <!-- FAQ Section -->
 <div class="container">
@@ -314,6 +229,95 @@
         </div>
 
         <div class="col-12 col-xl-6">
+            <?php if (EVENT_STARTED): ?>
+            <div class="container mt-5 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="accordion" id="agendaAccordion">
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h2 class="accordion-header" id="agendaHeading">
+                                    <button class="accordion-button collapsed fw-bold text-main-blue text-3xl"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#agendaCollapse"
+                                        aria-expanded="false" aria-controls="agendaCollapse">
+                                        <?= lang('welcome__landing.agenda.title') ?>
+                                    </button>
+                                </h2>
+                                <div id="agendaCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="agendaHeading" data-bs-parent="#agendaAccordion">
+                                    <div class="accordion-body">
+                                        <div class="timeline">
+                                            <?php foreach (lang('welcome__landing.agenda.items') as $index => $item): ?>
+                                            <div
+                                                class="d-flex gap-4 <?= $index < count(lang('welcome__landing.agenda.items')) - 1 ? 'mb-5' : '' ?>">
+                                                <div style="min-width: 120px;">
+                                                    <div class="fw-bold text-main-blue"><?= $item['date'] ?></div>
+                                                    <div class="small text-secondary"><?= $item['time'] ?></div>
+                                                </div>
+                                                <div>
+                                                    <h5 class="fw-bold mb-2"><?= $item['title'] ?></h5>
+                                                    <p class="text-secondary small mb-0"><?= $item['description'] ?>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <?php endforeach; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
+
+            <!-- Speakers Section -->
+            <?php if (EVENT_STARTED): ?>
+            <div class="">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="accordion" id="speakersAccordion">
+                                <div class="accordion-item border-0 shadow-sm">
+                                    <h2 class="accordion-header" id="speakersHeading">
+                                        <button class="accordion-button collapsed fw-bold text-main-blue text-3xl"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#speakersCollapse" aria-expanded="false"
+                                            aria-controls="speakersCollapse">
+                                            <?= lang('welcome__landing.speakers.title') ?>
+                                        </button>
+                                    </h2>
+                                    <div id="speakersCollapse" class="accordion-collapse collapse"
+                                        aria-labelledby="speakersHeading" data-bs-parent="#speakersAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row g-4">
+                                                <?php foreach (lang('welcome__landing.speakers.items') as $speaker): ?>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="card h-100 border-0 shadow-sm">
+                                                        <div class="bg-main-blue"
+                                                            style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                                            <i class="bi bi-person-circle"
+                                                                style="font-size: 4rem;"></i>
+                                                        </div>
+                                                        <div class="card-body text-center p-4">
+                                                            <h5 class="fw-bold mb-1"><?= $speaker['name'] ?></h5>
+                                                            <div class="text-main-blue small fw-semibold mb-3">
+                                                                <?= $speaker['role'] ?></div>
+                                                            <p class="small text-secondary mb-3"><?= $speaker['bio'] ?>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
             <?php include base_path('resources/views/components/faq.blade.php'); ?>
         </div>
     </div>
@@ -378,5 +382,3 @@
         parallaxHero.style.transform = `translateY(${offset}px)`;
     });
 </script>
-
-
