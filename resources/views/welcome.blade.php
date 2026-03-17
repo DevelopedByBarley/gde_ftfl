@@ -18,11 +18,12 @@
 
 
                     <div class="row">
-                        <div class="col-12 col-xl-6 bg-red-500">
-                            <img src="<?= public_file('images/flyer.jpg') ?>" alt="">
+                        <div class="col-12 col-xl-6 d-flex align-items-center justify-content-center p-0 m-0">
+                            <img src="<?= public_file('images/base/flyer_' . ($_COOKIE['lang'] ?? 'hu') . '.jpg') ?>"
+                                class="img-fluid p-0 m-0" alt="">
                         </div>
                         <div class="col-12 col-xl-6 p-lg-4">
-                            <p class="h5 fw-normal mb-4" style="line-height: 1.6;">
+                            <p class="h5 fw-normal mb-4" style="line-height: 1.6; text-align: justify;">
                                 <?= lang('welcome__landing.hero.description') ?>
                             </p>
                         </div>
@@ -49,10 +50,10 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 d-flex align-items-center">
+        <div class="col-lg-6 d-flex">
             <div class="text-center px-4 py-5">
                 <h3 class="fw-bold mb-4"><?= lang('welcome__landing.alert.title') ?></h3>
-                <p class="text-muted mb-4"><?= lang('welcome__landing.alert.body') ?></p>
+                <p class="text-muted mb-4" style="text-align: justify;"><?= lang('welcome__landing.alert.body') ?></p>
                 <ul class="list-unstyled">
                     <?php foreach (lang('welcome__landing.alert.list') as $item): ?>
                     <li class="mb-2">
@@ -105,7 +106,6 @@
 <section class="py-6">
     <div class="container">
         <h2 class="text-center h3 fw-bold mb-5 text-main-blue"><?= lang('welcome__landing.topics.title') ?></h2>
-        <p class="text-center"><?= lang('welcome__landing.invitation.desc') ?></p>
 
         <div class="row g-4 d-lg-none">
             <?php foreach (lang('welcome__landing.topics.items') as $topic): ?>
@@ -201,7 +201,7 @@
         <div class="container">
             <div class="row justify-content-center align-items-center g-4">
                 <div class="col-12 col-lg-4">
-                    <img src="<?= public_file('images/base/robot.jpg') ?>" alt="Audience section image"
+                    <img src="<?= public_file('images/base/kep_01.jpg') ?>" alt="Audience section image"
                         class="img-fluid rounded-3 shadow-sm w-100 rounded">
                 </div>
                 <div class="col-12 col-lg-8">

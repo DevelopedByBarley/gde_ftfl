@@ -126,3 +126,9 @@
 [DEV] {"email":"arpadsz@max.hu","table":"admins"}
 [2026-03-01 18:52:38] INFO: Felhasználó bejelentkezve
 [DEV] {"table":"admins","entity":"admin","user_id":1,"email":"arpadsz@max.hu"}
+[2026-03-17 11:35:51] INFO: Bejelentkezési kísérlet
+[DEV] {"email":"arpadsz@max.hu","table":"admins","verified_required":false}
+[2026-03-17 11:35:51] INFO: Sikeres bejelentkezés
+[DEV] {"email":"arpadsz@max.hu","table":"admins"}
+[2026-03-17 11:35:51] INFO: Felhasználó bejelentkezve
+[DEV] {"table":"admins","entity":"admin","user_id":1,"email":"arpadsz@max.hu"}
