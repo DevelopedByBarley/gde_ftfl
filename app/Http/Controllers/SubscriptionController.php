@@ -15,7 +15,7 @@ class SubscriptionController extends Controller
     'ai' => 'https://fifi.gde.hu/absztrakt',
     'ftfl' => 'https://ftfl.gde.hu/absztrakt',
     'drone' => 'https://fdfv.gde.hu/absztrakt',
-    'fsft' => 'https://informaciobiztonsag.gde.hu/absztrakt',
+    'fsft' => 'https://fsft.gde.hu/absztrakt',
   ];
   private $short_map = [
     'artificial_intelligence' => 'FIFI',
@@ -131,7 +131,7 @@ class SubscriptionController extends Controller
       $created_id = $this->subscriber->create($validated);
 
       // If creation failed, show error message and return back!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      if (!$created_id) {
+      if (!$created_id || (int)$created_id <= 0) {
         $this->toast->danger(lang('welcome__registration.subscription_failed'))->back();
       }
 

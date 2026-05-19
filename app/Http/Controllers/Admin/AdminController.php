@@ -4,13 +4,14 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin;
+use App\Models\Subscriber;
 use App\Services\AdminInviteService;
 use Core\Log;
 use Core\Response;
 use Core\Session;
 use Core\ValidationException;
 
-class AdminController extends Controller 
+class AdminController extends Controller
 {
 
   private $admin;
@@ -26,9 +27,33 @@ class AdminController extends Controller
   public function dashboard()
   {
     Log::info('Admin dashboard megnyitva', ['admin' => auth('admin')->email ?? null], 'admin');
+
+    $subscriber = new Subscriber();
+    $all        = $subscriber->getByConference(EVENT_TYPE);
+
+    $speakers  = array_values(array_filter($all, fn($s) => strtolower($s->registration_type ?? '') === 'speaker'));
+    $attendees = array_values(array_filter($all, fn($s) => strtolower($s->registration_type ?? '') === 'attendee'));
+
+    $inPerson = count(array_filter($all, fn($s) => strtolower($s->participation_type ?? '') === 'inperson'));
+    $online   = count(array_filter($all, fn($s) => strtolower($s->participation_type ?? '') === 'online'));
+
+    // Regisztrációk naponta (utolsó 14 nap)
+    $dailyCounts = [];
+    foreach ($all as $s) {
+      $day = date('Y-m-d', strtotime($s->created_at ?? 'now'));
+      $dailyCounts[$day] = ($dailyCounts[$day] ?? 0) + 1;
+    }
+    ksort($dailyCounts);
+    $last14 = array_slice($dailyCounts, -14, 14, true);
+
     return Response::view('admin/dashboard/index', 'admin-layout', [
-      'title' => 'Admin irányítópult',
-      'documentation_route' => '/admin/documentation/dashboard',
+      'title'         => 'Admin irányítópult',
+      'totalCount'    => count($all),
+      'speakerCount'  => count($speakers),
+      'attendeeCount' => count($attendees),
+      'inPersonCount' => $inPerson,
+      'onlineCount'   => $online,
+      'dailyCounts'   => $last14,
     ]);
   }
 
@@ -156,7 +181,7 @@ class AdminController extends Controller
 
     $updated = $this->admin->update($validated, $id);
 
-    if(!$updated) {
+    if (!$updated) {
       Log::error('Hiba történt az admin frissítése során: ' . $admin->email, ['admin' => auth('admin')->user()->email]);
       return $this->toast->danger('Hiba történt az admin frissítése során.')->back();
     }

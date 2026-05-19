@@ -87,7 +87,7 @@
                 class="col-12 col-lg-5 d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-end gap-3 text-center text-lg-end">
                 <div>
                     <img style="width: 100%; max-width: 250px;"
-                        src="<?= public_file('images/base/gde-logo-white.png') ?>" alt="GDE Logo">
+                        src="<?= public_file('images/base/gde-logo_'.($_COOKIE['lang'] ?? 'hu').'.png') ?>" alt="GDE Logo">
                 </div>
                 <div class="pe-0 pe-lg-3 py-3">
                     <a href="https://gde.hu/erasmus-week-2026" target="_blank" class="bg-white rounded p-2 d-block">

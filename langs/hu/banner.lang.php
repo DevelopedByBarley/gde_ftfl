@@ -1,8 +1,8 @@
 <?php
 return [
   'university' => 'Gábor Dénes Egyetem',
-  'title' => 'The Future of Teaching <br> The Future of Learning',
-  'date_range' => 'Május 21.',
+  'title' => 'The Future of Teaching The Future of Learning',
+  'date_range' => '2026. május 21.',
   'city' => '<a href="https://gde.hu" class="text-white text-decoration-none" target="_blank">Gábor Dénes Egyetem</a>, Budapest ',
   'year' => '2026',
   'lang' => [

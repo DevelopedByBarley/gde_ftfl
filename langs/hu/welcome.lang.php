@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'privacy_policy' => 'adatkezeles_hu.pdf',
+    'privacy_policy' => 'adatkezeles_hu.docx',
     'hero' => [
         'title' => 'FTFL',
         'subtitle' => '',
@@ -67,7 +67,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'company' => 'Cég / Egyetem',
         'phone' => 'Telefonszám',
         'select_conferences' => 'Válaszd ki, mely konferenciákon vennél részt',
-        'agree' => 'Elfogadom az <a href="/public/documents/adatkezeles_hu.pdf" target="_blank">Adatkezelési Szabályzatot</a>',
+        'agree' => 'Megismertem az <a href="/public/documents/adatkezeles_hu.docx" target="_blank">adatkezelési tájékoztatót</a>',
         'submit' => 'Küldés',
         'horizons_info' => 'Amennyiben szeretne jelentkezni további eseményeinkre is, kérjük látogasson el a',
         'horizons_link_label' => 'GDE Horizons oldalára',
@@ -150,7 +150,7 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
         'faq' => [
             [
                 'question' => 'Mikor és hol kerül megrendezésre az esemény?',
-                'answer' => 'A konferencia hét keretében, ami május 18-21-ig tart, az FTFL május 21-én lesz',
+                'answer' => 'Időpont: 2026. május 18–21.<br>Helyszín: 1119 Budapest, Fejér Lipót utca 70.',
             ],
             [
                 'question' => 'Hogyan épül fel egy konferencianap?',
@@ -182,12 +182,16 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
             ],
             [
                 'question' => 'Hogyan lehet előadóként jelentkezni?',
-                'answer' => 'Online regisztráció szükséges. A visszaigazoló e-mailben külön link érkezik az absztrakt feltöltéséhez. Az absztraktot az előírt formai követelmények szerint kell benyújtani. A feltöltést követően legkésőbb egy héten belül érkezik értesítés az elfogadásról vagy elutasításról.',
+                'answer' => 'Online regisztráció szükséges. Ezt követően absztraktot kell feltölteni az előírt formai követelményeknek megfelelően, 2026. április 20-ig. A szükséges tudnivalók az Előadói információknál találhatók. A feltöltés után legkésőbb április 27-ig érkezik értesítés az elfogadásról vagy elutasításról.',
             ],
             [
                 'question' => 'A konferenciára benyújtott absztraktok hol jelennek meg?',
                 'answer' => 'A hivatalosan elfogadott absztraktok absztraktkötetben jelennek meg. Az absztraktkötet a konferencia programfüzeteként is funkcionál.
                 Igen, lesz absztrakt kötet, DE aki szeretne angol nyelven publikálni, az megteheti a Digital Horizon folyóiratunkban.',
+            ],
+            [
+                'question' => 'Van-e a konferenciához kapcsolódó publikálási lehetőség?',
+                'answer' => 'Igen, a Gábor Dénes Egyetem Digital <a href="https://gde.hu/digital-horizons" target="_blank">Horizons</a> című tudományos folyóiratában van lehetőség publikálásra.<br><br>A konferenciahetet követően minden előadó megkapja a szükséges információkat.',
             ],
             [
                 'question' => 'Kapnak az előadók előadói igazolást?',
@@ -198,7 +202,12 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
     'landing' => [
         'alert' => [
             'title' => 'Felhívás előadóknak és szakmai résztvevőknek',
-            'body' => 'Az FTFL2026 konferencia a Dennis Gabor Digital Horizons Week keretében kerül megrendezésre, és fórumot biztosít az oktatás és a tanulás digitális átalakulásával kapcsolatos kutatási eredmények és gyakorlati tapasztalatok bemutatására. A konferencián személyes és online formában is részt lehet venni, valamint előadást tartani. Várjuk előadók, kiállítók és szakmai érdeklődők jelentkezését! A konferencián lehetőség nyílik az alábbi munkák bemutatására széles körű szakmai közönség előtt:',
+            'body' => 'Az FTFL2026 konferencia a Dennis Gabor Digital Horizons Week keretében kerül megrendezésre, és fórumot biztosít az oktatás és a tanulás digitális átalakulásával kapcsolatos kutatási eredmények és gyakorlati tapasztalatok bemutatására. A konferencián <b class="fw-bold">személyes és online formában</b> is részt lehet venni, valamint előadást tartani. A konferencián a plenáris előadásokat és az angol nyelvű szekció előadásokat közvetítjük online formában. Várjuk előadók, kiállítók és szakmai érdeklődők jelentkezését!
+            <br> <br>
+                Az <b class="fw-bold">előadói és kiállítói</b> regisztráció lezárult. A <b class="fw-bold">részvételi regisztráció</b> személyes jelenlét esetén a rendelkezésre álló férőhelyek függvényében továbbra is biztosított, online formában pedig folyamatosan elérhető.
+            <br>
+            <br>
+            A konferencián lehetőség nyílik az alábbi munkák bemutatására széles körű szakmai közönség előtt:',
             'list' => [
                 'Tudományos publikációk és kutatási eredmények',
                 'Esettanulmányok és gyakorlati alkalmazások',
@@ -257,25 +266,31 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
              A rendezvény interdiszciplináris szakmai párbeszédet támogat az akadémiai és gyakorlati tapasztalatok mentén.',
         ],
         'agenda' => [
-            'title' => 'Menetrend',
+            'title' => 'Napirend',
             'items' => [
                 [
-                    'date' => '2026. május 18.',
-                    'time' => '09:00 - 17:00',
-                    'title' => '1. nap - Hardware és Innováció',
-                    'description' => 'Nyitó ceremónia, keynote előadások a legújabb drón technológiákról, workshop szekciók',
+                    'time' => '09:00 – 09:50',
+                    'title' => 'Regisztráció',
                 ],
                 [
-                    'date' => '2026. május 19.',
-                    'time' => '09:00 - 17:00',
-                    'title' => '2. nap - Alkalmazások és Üzlet',
-                    'description' => 'Ipari esettanulmányok, startup pitchek, hálózatépítési szektor-specifikus szekciók',
+                    'time' => '10:00 – 12:30',
+                    'title' => 'Plenáris előadások',
                 ],
                 [
-                    'date' => '2026. május 20.',
-                    'time' => '10:00 - 16:00',
-                    'title' => '3. nap - Szabályozás és Jövő',
-                    'description' => 'Panelbeszélgetések, jogi workshop, zárókeynote és networking gala',
+                    'time' => '12:30 – 13:10',
+                    'title' => 'Ebédszünet',
+                ],
+                [
+                    'time' => '13:15 – 15:00',
+                    'title' => 'Szekcióülések',
+                ],
+                [
+                    'time' => '15:00 – 15:25',
+                    'title' => 'Kávészünet',
+                ],
+                [
+                    'time' => '15:30 – 17:00',
+                    'title' => 'Szekcióülések',
                 ],
             ],
         ],
@@ -336,8 +351,8 @@ A konferencia hozzájárul az e-learning és az oktatásmódszertan területén 
                 'url' => '/subscription',
             ],
             'privacy' => [
-                'label' => 'Adatvédelmi szabályzat',
-                'url' => '/privacy',
+                'label' => 'Adatkezelési tájékoztató',
+                'url' => '/public/documents/adatkezeles_hu.docx',
             ],
             'terms' => [
                 'label' => 'Általános Szerződési Feltételek',

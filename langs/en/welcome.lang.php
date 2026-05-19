@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'privacy_policy' => 'privacy_policy_en.pdf',
+    'privacy_policy' => 'adatkezeles_en.docx',
     'hero' => [
         'title' => 'FTFL',
         'subtitle' => '',
@@ -71,7 +71,7 @@ return [
         'company' => 'Company / University',
         'phone' => 'Phone number',
         'select_conferences' => 'Select the conferences you would like to attend',
-        'agree' => 'I agree to the <a href="/public/documents/adatkezeles_en.pdf" target="_blank">Privacy Policy</a>',
+        'agree' => 'I have read the <a href="/public/documents/adatkezeles_en.docx" target="_blank">Privacy Notice</a>',
         'submit' => 'Submit',
         'help_text' => 'If you have any questions or issues, please write to:',
         'help_email' => 'support@gde.example',
@@ -154,7 +154,7 @@ return [
         'faq' => [
             [
                 'question' => 'When and where will the event take place?',
-                'answer' => 'Date: May 18–21, 2026<br>Location: 1039 Budapest, Fejér Lipót Street 70.',
+                'answer' => 'Date: May 18–21, 2026<br>Location: 1119 Budapest, Fejér Lipót Street 70.',
             ],
             [
                 'question' => 'How is a conference day structured?',
@@ -186,11 +186,15 @@ return [
             ],
             [
                 'question' => 'How can I apply as a speaker?',
-                'answer' => 'Online registration is required. A separate link for abstract submission will be sent in the confirmation email. The abstract must be submitted according to the prescribed formatting requirements. Notification of acceptance or rejection will be sent within one week of submission.',
+                'answer' => 'Online registration is required. An abstract must then be submitted according to the prescribed formatting requirements, by 20 April 2026. The necessary information can be found under Speaker Information. Notification of acceptance or rejection will be sent no later than 27 April after submission.',
             ],
             [
                 'question' => 'Where will the abstracts submitted to the conference be published?',
                 'answer' => 'Officially accepted abstracts will be published in an abstract booklet. The abstract booklet also functions as the conference program.',
+            ],
+            [
+                'question' => 'Is there a publication opportunity related to the conference?',
+                'answer' => 'Yes, there is an opportunity to publish in the Dennis Gabor University\'s scientific journal, Digital <a href="https://gde.hu/digital-horizons" target="_blank">Horizons</a>.<br><br>Following the conference week, all speakers will receive the necessary information.',
             ],
             [
                 'question' => 'Will speakers receive a speaker certificate?',
@@ -201,7 +205,11 @@ return [
     'landing' => [
         'alert' => [
             'title' => 'Call for Speakers and Professional Participants',
-            'body' => 'The FTFL2026 conference will be held as part of the Dennis Gabor Digital Horizons Week, providing a forum for presenting research results and practical experiences related to the digital transformation of education and learning. Participation and presentations are possible both in person and online. We welcome applications from speakers, exhibitors, and professional attendees! The conference offers the opportunity to present the following works to a broad professional audience:',
+            'body' => 'The FTFL2026 conference will be held as part of the Dennis Gabor Digital Horizons Week, providing a forum for presenting research results and practical experiences related to the digital transformation of education and learning. Participation and presentations are possible both <b class="fw-bold">in person and online</b>. The plenary presentations and the presentations in the English-language section of the conference will be streamed online. We welcome applications from speakers, exhibitors, and professional attendees!
+            <br> <br>
+                Applications for <b class="fw-bold">speakers and exhibitors</b> are accepted by the organizers with a modified deadline until <b class="fw-bold">30 April 2026</b>. <b class="fw-bold">Participant registration</b> for in-person attendance is subject to available capacity, while online participation remains continuously available.            <br>
+            <br>
+            The conference offers the opportunity to present the following works to a broad professional audience:',
             'list' => [
                 'Scientific publications and research results',
                 'Case studies and practical applications',
@@ -262,25 +270,31 @@ return [
         ',
         ],
         'agenda' => [
-            'title' => 'Schedule',
+            'title' => 'Agenda',
             'items' => [
                 [
-                    'date' => '18 May 2026',
-                    'time' => '09:00 - 17:00',
-                    'title' => 'Day 1 - Hardware and Innovation',
-                    'description' => 'Opening ceremony, keynote presentations on the latest drone technologies, workshop sessions',
+                    'time' => '09:00 – 09:50',
+                    'title' => 'Registration',
                 ],
                 [
-                    'date' => '19 May 2026',
-                    'time' => '09:00 - 17:00',
-                    'title' => 'Day 2 - Applications and Business',
-                    'description' => 'Industrial case studies, startup pitches, sector-specific networking sessions',
+                    'time' => '10:00 – 12:30',
+                    'title' => 'Plenary Sessions',
                 ],
                 [
-                    'date' => '20 May 2026',
-                    'time' => '10:00 - 16:00',
-                    'title' => 'Day 3 - Regulation and the Future',
-                    'description' => 'Panel discussions, legal workshop, closing keynote, and networking gala',
+                    'time' => '12:30 – 13:10',
+                    'title' => 'Lunch Break',
+                ],
+                [
+                    'time' => '13:15 – 15:00',
+                    'title' => 'Section Sessions',
+                ],
+                [
+                    'time' => '15:00 – 15:25',
+                    'title' => 'Coffee Break',
+                ],
+                [
+                    'time' => '15:30 – 17:00',
+                    'title' => 'Section Sessions',
                 ],
             ],
         ],
@@ -328,8 +342,8 @@ return [
         'youtube_label' => 'This is what the FTFL2025 conference was like:',
     ],
     'footer' => [
-        'about_title' => 'Gabor Denes University',
-        'about_text' => 'The GDE  Digital Horizons Week brings together researchers, industry leaders, and innovators to showcase the future of technology and science.',
+        'about_title' => 'Dennis Gabor University',
+        'about_text' => 'The DGU Digital Horizons Week brings together researchers, industry leaders, and innovators to showcase the future of technology and science.',
         'quick_links' => 'Quick Links',
         'links' => [
             'home' => [
@@ -341,8 +355,8 @@ return [
                 'url' => '/subscription',
             ],
             'privacy' => [
-                'label' => 'Privacy Policy',
-                'url' => '/privacy',
+                'label' => 'Privacy notice',
+                'url' => '/public/documents/adatkezeles_en.docx',
             ],
             'terms' => [
                 'label' => 'Terms and Conditions',

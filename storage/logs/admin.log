@@ -31,891 +31,514 @@
 [DEV] {"admin":"arpadsz@max.hu"}
 [2026-01-18 11:41:09] INFO: Admin létrehozása oldal megnyitva
 [DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:19:38] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:27:05] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:27:40] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:27:40] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:27:49] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:27:49] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:28:39] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:28:53] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:29:50] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:31:41] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:36:41] INFO: Feliratkozók listája megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:36:42] INFO: Feliratkozók listája megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:07] INFO: Feliratkozók listája megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:42] INFO: Feliratkozók listája megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:44] INFO: Feliratkozók listája megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:45] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:45] INFO: Feliratkozók listája megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:52] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:53] INFO: Feliratkozók listája megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:58] INFO: Feliratkozók listája megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:59] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:37:59] INFO: Feliratkozók listája megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:48:55] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:48:56] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:48:58] WARNING: Feliratkozó nem található
-[DEV] {"id":["3"],"admin":"arpadsz@max.hu"}
-[2026-03-01 17:49:02] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:49:37] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:18] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:19] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:19] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:19] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:19] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:19] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:19] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:20] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:20] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:20] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:51:20] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:52:42] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:52:43] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:52:43] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:08] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:09] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:14] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:14] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:15] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:18] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:19] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:19] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:53:20] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:54:07] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:54:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:54:10] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:54:11] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:54:12] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:55:39] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:55:40] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:56:22] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:56:36] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:56:37] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:56:37] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:56:46] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:56:47] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:57:00] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 17:57:01] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 17:57:01] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:01:24] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:01:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:01:25] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:01:34] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:02] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:02] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:12] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:21] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:21] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:22] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:22] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:22] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:22] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:02:48] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:03:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:03:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:03:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:03:52] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:04:12] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:04:16] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:04:17] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:05:27] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:05:28] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:05:36] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:05:37] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:05:37] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:06:50] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:07:25] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:07:41] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:07:42] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:07:53] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:08:02] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:08:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:09:18] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:10:55] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:15:04] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:15:48] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:15:49] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:15:53] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:16:02] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:16:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:16:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:16:24] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:16:24] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:16:31] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:17:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:17:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:17:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:17:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:17:03] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:17:05] INFO: Absztrakt letöltés
-[DEV] {"id":"12","file":"DG week GYIK ötletek.docx","admin":"arpadsz@max.hu"}
-[2026-03-01 18:18:08] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:18:08] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:18:09] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:18:56] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:04] INFO: Absztrakt letöltés
-[DEV] {"id":"13","file":"DG week GYIK ötletek.docx","admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:09] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:10] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:11] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:16] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:18] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:18] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:21] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"de","admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"yxíxíyxyíx","admin":"arpadsz@max.hu"}
-[2026-03-01 18:19:27] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"xyíxyxíxyíxyíx","admin":"arpadsz@max.hu"}
-[2026-03-01 18:20:53] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"xyíxyxíxyíxyíx","admin":"arpadsz@max.hu"}
-[2026-03-01 18:20:56] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"","admin":"arpadsz@max.hu"}
-[2026-03-01 18:20:59] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"deve","admin":"arpadsz@max.hu"}
-[2026-03-01 18:21:07] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:21:48] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"deve","admin":"arpadsz@max.hu"}
-[2026-03-01 18:21:48] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"deve","admin":"arpadsz@max.hu"}
-[2026-03-01 18:21:50] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:22:53] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"deve","admin":"arpadsz@max.hu"}
-[2026-03-01 18:23:02] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"","admin":"arpadsz@max.hu"}
-[2026-03-01 18:23:29] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"","admin":"arpadsz@max.hu"}
-[2026-03-01 18:23:30] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:23:49] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:24:03] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:24:03] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:24:04] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:24:04] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:24:15] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:24:15] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:24:27] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:25:05] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"","admin":"arpadsz@max.hu"}
-[2026-03-01 18:25:15] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"","admin":"arpadsz@max.hu"}
-[2026-03-01 18:25:16] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":"","admin":"arpadsz@max.hu"}
-[2026-03-01 18:25:19] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:25:30] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:52:37] INFO: Admin login próbálkozás
-[DEV] {"email":"arpadsz@max.hu"}
-[2026-03-01 18:52:38] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:52:39] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:52:40] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:52:41] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:52:52] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:52:53] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:52:53] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:53:15] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:53:16] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:53:17] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:53:19] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:53:26] INFO: Admin lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:53:29] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:53:29] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:54:03] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:54:04] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:54:06] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:54:07] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:54:09] INFO: Absztrakt letöltés
-[DEV] {"id":"13","file":"DG week GYIK ötletek.docx","admin":"arpadsz@max.hu"}
-[2026-03-01 18:55:24] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:55:24] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:56:19] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:56:39] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:56:40] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 18:56:40] INFO: Absztraktok exportálása CSV-ben
-[DEV] {"count":1,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:56:59] INFO: Absztraktok exportálása CSV-ben
-[DEV] {"count":1,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:56:59] INFO: Absztraktok exportálása CSV-ben
-[DEV] {"count":1,"admin":"arpadsz@max.hu"}
-[2026-03-01 18:57:04] INFO: Absztraktok exportálása CSV-ben
-[DEV] {"count":1,"admin":"arpadsz@max.hu"}
-[2026-03-01 19:01:55] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:01:56] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 19:01:56] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:01:57] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 19:01:58] WARNING: Feliratkozó nem található
-[DEV] {"id":["3"],"admin":"arpadsz@max.hu"}
-[2026-03-01 19:02:18] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 19:02:23] WARNING: Feliratkozó nem található törléshez
-[DEV] {"id":["3"],"admin":"arpadsz@max.hu"}
-[2026-03-01 19:02:35] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 19:02:36] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:02:36] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 19:02:37] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:03:27] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:03:28] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-01 19:03:29] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:09:18] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:09:18] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:09:22] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:17:58] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-01 19:21:23] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:16:05] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:16:15] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:16:16] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:16:16] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:16:17] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:16:17] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:16:18] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:16:18] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:52:54] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:52:55] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:52:56] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:52:57] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:52:58] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:52:58] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:52:58] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:52:59] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:52:59] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:04] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:09] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:15] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:17] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:17] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:41] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:54] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:54] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:55] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:53:55] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:57:15] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:57:17] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:57:19] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 10:57:20] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 10:58:16] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:02:44] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:02:45] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:02:46] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:02:48] INFO: Absztrakt letöltés
-[DEV] {"id":"1","file":"2025_budafok100_latvany_v1.pdf","admin":"arpadsz@max.hu"}
-[2026-03-02 11:04:14] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:04:16] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:04:49] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:04:49] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:04:50] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:04:50] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:04:50] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:04:50] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:04:59] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:05:15] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:09:05] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:09:07] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:09:09] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:09:14] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:09:29] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:10:36] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:10:43] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:09] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:09] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:11] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:11] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:13] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:11:27] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:12:29] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:13:30] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:13:32] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:19:03] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:19:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:19:23] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:19:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:19:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:19:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:19:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:19:40] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:19:41] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:05] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:20] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:44] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:45] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:45] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:45] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:45] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:45] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:54] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:55] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:55] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:20:55] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:03] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:15] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:15] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:15] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:16] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:21:28] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:10] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:11] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:11] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:27] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:27] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:28] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:28] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:28] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:39] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:22:40] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:23:06] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:23:06] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:23:06] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:23:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:23:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:23:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:23:32] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:23:59] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:24:09] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:26:00] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:26:00] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:26:01] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:26:02] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:27:38] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:27:38] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:27:38] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:27:38] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:27:38] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:27:39] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:27:51] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:27:52] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:07] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:08] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:10] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:30] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:30] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:33] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:33] ERROR: Csak FTFL előadók export hiba
-[DEV] {"message":"array_keys(): Argument #1 ($array) must be of type array, null given","admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:33] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:36] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:36] ERROR: Csak FTFL előadók export hiba
-[DEV] {"message":"array_keys(): Argument #1 ($array) must be of type array, null given","admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:36] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:47] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:28:48] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:29:05] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:29:15] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:29:15] ERROR: Csak FTFL előadók export hiba
-[DEV] {"message":"array_keys(): Argument #1 ($array) must be of type array, null given","admin":"arpadsz@max.hu"}
-[2026-03-02 11:29:15] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:30:20] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:30:30] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:30:41] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:30:42] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:30:42] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:30:47] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:30:47] ERROR: Csak FTFL előadók export hiba
-[DEV] {"message":"array_keys(): Argument #1 ($array) must be of type array, null given","admin":"arpadsz@max.hu"}
-[2026-03-02 11:30:47] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:31:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:31:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:31:04] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:31:05] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:31:05] ERROR: Csak FTFL előadók export hiba
-[DEV] {"message":"array_keys(): Argument #1 ($array) must be of type array, null given","admin":"arpadsz@max.hu"}
-[2026-03-02 11:31:05] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:32:29] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:33:22] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:33:23] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:33:25] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:34:07] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:34:08] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:34:09] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:34:42] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:34:43] INFO: Absztrakt letöltés
-[DEV] {"id":"1","file":"2025_budafok100_latvany_v1.pdf","admin":"arpadsz@max.hu"}
-[2026-03-02 11:34:47] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:34:50] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:35:28] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:35:34] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:35:57] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:36:06] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:36:15] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:36:21] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:51:00] INFO: Admin dashboard megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:51:03] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:51:08] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:51:09] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:51:10] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:51:26] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:52:23] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:23] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:23] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:23] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:27] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:28] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:28] ERROR: Csak FTFL előadók export hiba
-[DEV] {"message":"Nincsenek előfizetők a megadott konferenciára.","admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:28] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:30] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:30] ERROR: Csak FTFL előadók export hiba
-[DEV] {"message":"Nincsenek előfizetők a megadott konferenciára.","admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:30] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:30] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:32] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:53:41] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:58:30] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:58:31] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:58:31] ERROR: Csak FTFL előadók export hiba
-[DEV] {"message":"Nincsenek előfizetők a megadott konferenciára.","admin":"arpadsz@max.hu"}
-[2026-03-02 11:58:31] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:58:34] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:58:40] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:58:40] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:58:53] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:58:58] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:24] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:25] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:54] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 11:59:58] INFO: Csak FTFL előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 12:00:05] INFO: Csak előadók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 12:00:13] INFO: FTFL feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 12:00:20] INFO: Feliratkozók export indítva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 12:00:36] INFO: Feliratkozók lista megnyitva
-[DEV] {"search":null,"admin":"arpadsz@max.hu"}
-[2026-03-02 12:00:42] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 12:01:48] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 12:01:48] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 12:01:49] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
-[2026-03-02 12:01:49] INFO: Absztraktok lista megnyitva
-[DEV] {"admin":"arpadsz@max.hu"}
+[2026-03-02 16:16:43] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"arpadsz@max.hu"}
+[2026-03-02 16:16:45] INFO: Admin kijelentkezés kísérlet.
+[DEV] {"admin_id":"38"}
+[2026-03-02 16:16:45] INFO: Admin kijelentkezés megtörtént
+[2026-03-02 16:17:07] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-02 16:17:08] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 16:17:12] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-02 16:17:14] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 16:17:25] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 16:17:27] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-02 16:17:29] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 19:49:28] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-02 19:49:28] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 19:49:29] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 19:49:30] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-02 19:49:31] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 19:52:43] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 19:52:45] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 19:52:46] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-02 19:52:47] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-02 19:52:48] INFO: Absztrakt letöltés
+[DEV] {"id":"18","file":"44956498269a5dc4aadac20.59944746.docx","admin":"bogi@max.hu"}
+[2026-03-03 10:47:25] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-03 10:47:25] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 10:47:26] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 10:47:27] INFO: Absztrakt letöltés
+[DEV] {"id":"19","file":"152546582269a6ae1b781bf5.71567856.docx","admin":"bogi@max.hu"}
+[2026-03-03 10:56:58] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:10:44] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:12:56] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:12:57] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:15:10] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:15:10] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:15:11] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:15:11] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:15:11] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:15:11] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:15:12] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:26:03] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:26:04] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-03 11:26:48] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-03 11:26:49] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:26:50] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-03 11:26:56] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:26:57] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-03 11:26:58] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:26:59] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-03 11:27:01] INFO: FTFL feliratkozók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:27:09] INFO: Csak előadók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:27:54] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-03 11:29:32] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:29:34] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-03 11:29:36] INFO: Csak előadók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:29:41] INFO: Csak FTFL résztvevők export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:29:52] INFO: Feliratkozók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:30:08] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:37:19] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:37:46] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:37:48] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-03 11:37:54] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-04 12:55:21] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-04 12:55:21] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-04 12:55:23] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-04 12:55:28] INFO: Absztrakt letöltés
+[DEV] {"id":"28","file":"95613911869a81d32d7de34.02145741.docx","admin":"bogi@max.hu"}
+[2026-03-04 14:21:45] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-04 14:21:45] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-04 14:21:52] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-04 14:24:28] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-05 12:17:43] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-05 12:17:43] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-05 12:17:44] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-05 12:17:55] INFO: Absztrakt letöltés
+[DEV] {"id":"33","file":"90113554169a861fa93f4e2.83750075.docx","admin":"bogi@max.hu"}
+[2026-03-05 18:26:19] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-05 18:26:19] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-05 18:26:42] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-06 13:24:27] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-06 13:24:28] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:24:29] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:24:58] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-06 13:24:59] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-06 13:25:01] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:25:10] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-06 13:25:15] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-06 13:25:16] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-06 13:25:43] INFO: Admin kijelentkezés kísérlet.
+[DEV] {"admin_id":"65"}
+[2026-03-06 13:25:43] INFO: Admin kijelentkezés megtörtént
+[2026-03-06 13:25:48] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-06 13:25:48] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:25:51] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:25:55] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-06 13:25:59] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:26:10] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-06 13:26:12] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-06 13:26:15] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-06 13:26:23] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:26:26] INFO: Absztrakt letöltés
+[DEV] {"id":"44","file":"211514855969aac776b88153.61836371.docx","admin":"bogi@max.hu"}
+[2026-03-06 13:34:20] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:34:21] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:34:22] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-06 13:34:23] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-08 17:05:35] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-08 17:05:35] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-08 17:05:36] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-08 20:18:26] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-08 20:18:26] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-08 20:18:27] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-08 20:18:28] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-08 20:18:30] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-08 20:18:36] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-08 20:18:37] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-08 20:18:38] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-08 20:19:01] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-08 20:20:09] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-08 20:20:14] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-08 20:20:49] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-08 20:21:18] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-08 20:21:19] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-08 20:21:20] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-08 20:21:21] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-09 10:12:31] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-09 10:12:31] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-09 10:20:29] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-09 10:20:29] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-09 10:20:31] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-09 10:20:39] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-09 10:21:26] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-09 10:21:30] INFO: Absztrakt letöltés
+[DEV] {"id":"63","file":"168396523669ae9110178627.78058158.docx","admin":"bogi@max.hu"}
+[2026-03-17 11:33:08] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-17 11:33:09] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-17 11:33:10] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-17 11:37:23] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-17 11:37:25] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-17 11:37:39] INFO: FTFL feliratkozók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-17 11:37:41] INFO: Csak előadók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-17 11:37:42] INFO: Csak FTFL résztvevők export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-17 11:48:55] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-19 09:57:29] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-19 09:57:29] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-19 09:57:31] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-19 09:57:35] INFO: Absztrakt letöltés
+[DEV] {"id":"72","file":"27529014269bbba732e6109.05943151.pdf","admin":"bogi@max.hu"}
+[2026-03-24 10:01:10] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-24 10:01:10] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 10:01:12] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 10:12:26] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 10:12:37] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 11:40:20] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-03-24 11:40:20] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-24 11:40:48] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-24 11:40:50] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-24 11:40:51] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-24 11:42:29] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-24 11:42:36] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-24 11:42:37] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-24 11:42:37] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-24 11:42:39] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-03-24 11:42:39] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-03-24 12:24:40] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-24 12:24:41] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:24:57] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:38:52] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:39:02] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:39:28] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:40:05] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:41:16] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:41:27] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:41:35] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:41:37] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:41:38] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:41:39] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:41:50] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:41:51] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 12:43:21] INFO: Absztrakt letöltés
+[DEV] {"id":"2","file":"197561334869be72a760c3a0.86300544.docx","admin":"admin-gde-event@admin.hu"}
+[2026-03-24 18:34:43] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-24 18:34:44] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 18:34:48] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 18:34:59] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 18:41:13] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-24 18:41:18] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-26 09:47:41] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-26 09:47:41] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-26 09:53:10] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-26 16:42:26] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-26 16:42:26] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-26 16:43:38] INFO: Admin kijelentkezés kísérlet.
+[DEV] {"admin_id":"64"}
+[2026-03-26 16:43:38] INFO: Admin kijelentkezés megtörtént
+[2026-03-27 08:42:06] INFO: Admin login próbálkozás
+[DEV] {"email":"ftfl_admin@admin.hu"}
+[2026-03-30 09:10:12] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-30 09:10:12] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-30 09:10:16] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-30 09:17:45] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-30 09:18:00] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-30 11:57:03] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-30 11:57:03] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-30 11:57:06] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-30 11:57:17] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-31 10:55:45] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-31 10:55:46] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-31 10:55:51] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-31 10:56:03] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-31 10:56:08] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-31 10:56:27] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-31 13:34:45] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-03-31 13:34:45] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-31 13:34:49] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-03-31 13:35:27] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-03-31 13:36:38] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-01 14:03:34] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-04-01 14:03:34] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-01 14:03:40] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-01 14:03:41] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-04-01 14:03:58] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-07 11:17:27] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-04-07 11:17:27] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-07 11:17:31] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-04-07 11:17:38] INFO: Absztraktok lista megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-07 11:17:43] INFO: Absztrakt letöltés
+[DEV] {"id":"7","file":"23397159469cfe1da9f6cd8.34402981.pdf","admin":"admin-gde-event@admin.hu"}
+[2026-04-07 11:18:20] INFO: Absztrakt letöltés
+[DEV] {"id":"4","file":"121481173269c24cb30d7271.70030949.docx","admin":"admin-gde-event@admin.hu"}
+[2026-04-07 11:18:41] INFO: Absztrakt letöltés
+[DEV] {"id":"2","file":"197561334869be72a760c3a0.86300544.docx","admin":"admin-gde-event@admin.hu"}
+[2026-04-07 11:19:13] INFO: Absztrakt letöltés
+[DEV] {"id":"5","file":"2291650969c66c2a0bbb93.05573355.pdf","admin":"admin-gde-event@admin.hu"}
+[2026-04-07 11:19:25] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-04-07 11:19:44] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-04-08 13:22:46] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-04-08 13:22:46] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-08 13:22:52] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-08 13:22:54] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-04-08 13:23:06] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-08 13:23:19] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-08 13:23:38] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-09 13:24:48] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-04-09 13:24:49] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-09 13:24:50] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-09 13:24:52] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-04-09 14:46:57] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-04-09 14:46:58] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-09 14:46:59] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-04-09 14:48:23] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-09 14:49:00] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-09 14:49:03] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-04-09 14:49:05] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-09 14:49:06] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-04-09 14:49:26] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-04-14 13:41:28] INFO: Admin login próbálkozás
+[DEV] {"email":"bogi@max.hu"}
+[2026-04-14 13:41:28] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-14 13:41:30] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"bogi@max.hu"}
+[2026-04-14 13:41:35] INFO: Csak előadók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-14 13:41:39] INFO: Csak FTFL résztvevők export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-14 13:43:10] INFO: FTFL feliratkozók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-14 13:43:13] INFO: Csak FTFL résztvevők export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-14 13:43:13] INFO: Csak előadók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-14 13:43:28] INFO: FTFL feliratkozók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-14 13:43:35] INFO: Csak FTFL résztvevők export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-14 13:43:36] INFO: Csak előadók export indítva
+[DEV] {"admin":"bogi@max.hu"}
+[2026-04-15 13:53:56] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-04-15 13:53:56] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-15 14:52:27] INFO: Admin login próbálkozás
+[DEV] {"email":"admin-gde-event@admin.hu"}
+[2026-04-15 14:52:27] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-15 14:52:31] INFO: Feliratkozók lista megnyitva
+[DEV] {"search":null,"admin":"admin-gde-event@admin.hu"}
+[2026-04-15 14:52:37] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-15 14:52:38] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}
+[2026-04-15 14:52:41] INFO: Admin dashboard megnyitva
+[DEV] {"admin":"admin-gde-event@admin.hu"}

@@ -1,7 +1,7 @@
 <?php
 
 return [
-  'usage' => 'personal',
+  'usage' => 'production',
   'driver' => $_ENV['MAIL_MAILER'] ?? 'smtp',
   'scheme' => $_ENV['MAIL_SCHEME'] ?? null,
   'host' => $_ENV['MAIL_HOST'] ?? '127.0.0.1',

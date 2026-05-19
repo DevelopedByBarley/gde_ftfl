@@ -22,7 +22,7 @@ class AbstractModel extends Model
 
 
   public function export() {
-    $abstracts = $this->findAllBy('abstract_type', EVENT_TYPE) ?? [];
+    $abstracts = $this->findAllBy('type', EVENT_TYPE) ?? [];
 
     if (empty($abstracts)) {
       throw new \Exception("Nincsenek absztraktok az exportáláshoz.");
@@ -33,7 +33,7 @@ class AbstractModel extends Model
         'ID' => $abstract->id,
         'Title' => $abstract->title,
         'Author' => $abstract->author,
-        'Type' => $abstract->abstract_type,
+        'Type' => $abstract->type,
         'Created At' => $abstract->created_at,
       ];
     }, $abstracts);
@@ -54,7 +54,7 @@ class AbstractModel extends Model
         'ID' => $abstract->id,
         'Title' => $abstract->title,
         'Author' => $abstract->author,
-        'Type' => $abstract->abstract_type,
+        'Type' => $abstract->type,
         'Created At' => $abstract->created_at,
       ];
     }, $abstracts);

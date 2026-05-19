@@ -64,16 +64,6 @@ class Model
     }
   }
 
-  public function findAllBy(string $column, $value)
-  {
-    try {
-      return $this->db->query("SELECT * FROM $this->table WHERE $column = :value", ['value' => $value])->get();
-    } catch (Exception $e) {
-      Log::critical("Database findAllBy error in Model.", "Database error: " . $e->getMessage());
-      return null;
-    }
-  }
-
   public function create(array $data, array $exceptions = [])
   {
     return $this->insertIntoTable($this->table, $data, $exceptions);
@@ -104,7 +94,14 @@ class Model
       $placeholders = implode(", ", array_map(fn($key) => ":$key", array_keys($filteredData)));
       $sql = "INSERT INTO $table ($columns) VALUES ($placeholders)";
 
-      return $this->db->query($sql, $filteredData)->getLastInsertedId();
+      $result = $this->db->query($sql, $filteredData);
+
+      if ($result->rowCount() === 0) {
+        Log::critical("Database insert error in Model.", "INSERT into $table affected 0 rows.");
+        return null;
+      }
+
+      return $result->getLastInsertedId();
     } catch (Exception $e) {
       Log::critical("Database insert error in Model.", "Database error: " . $e->getMessage());
       return null;
@@ -179,6 +176,17 @@ class Model
       return null;
     }
   }
+
+  public function findAllBy(string $column, $value)
+  {
+    try {
+      return $this->db->query("SELECT * FROM $this->table WHERE $column = :value", ['value' => $value])->get();
+    } catch (Exception $e) {
+      Log::critical("Database findAllBy error in Model.", "Database error: " . $e->getMessage());
+      return null;
+    }
+  }
+
 
   /**
    * Find first record by specific column and value
